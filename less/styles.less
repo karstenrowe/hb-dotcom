@@ -1,0 +1,694 @@
+// Created: @karstenrowe 06-12-2013
+// Project: Harrogate Health & Beauty web build
+
+// import bootstrap
+@import "bootstrap.less";
+
+
+/* ============================ */
+/* = font = */
+/* ============================ */
+@headline-font: 'Noto Serif', serif; // 400
+@body-font: 'Noto Sans', sans-serif; // 400, 700, 400italic
+
+@big: 17px; // line-height: 23px;
+@normal: 15px; // line-height: 23px;
+@small: 13px; // line-height: 16px;
+/* ============================ */
+
+
+/* ============================ */
+/* = toolbox = */
+/* ============================ */
+// retina mixin
+@highdpi: ~"(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx)";
+
+.2x(@path, @position, @w: auto, @h: auto) {
+	background-image: url(@path);
+	background-repeat: ~"@{position}";
+	@at2x_path: ~`"@{path}".split('.').slice(0, "@{path}".split('.').length - 1).join(".") + "_2x" + "." + "@{path}".split('.')["@{path}".split('.').length - 1]`;
+
+	@media @highdpi {
+		background-image: url(@at2x_path);
+		background-repeat: ~"@{position}";
+		background-size: @w @h;
+	}
+}
+// clearfix
+.clearfix() {
+	zoom: 1;
+	&:before,
+	&:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+	&:after { clear: both; }
+}
+/* ============================ */
+
+
+/* ============================ */
+/* = color = */
+/* ============================ */
+@brand-dk: #1d2262;
+@brand: #7b6fb1; // lilac purple
+@brand-lt: #faf9fd;
+
+@grey-dk: #3e3a34;
+@grey: #726a5d; // warm grey
+@grey-lt: #e9e5de;
+
+@off-white-dk: darken(@off-white, 7%);
+@off-white: #fcfaf6;
+/* ============================ */
+
+
+/* ============================ */
+/* = selection color = */
+/* ============================ */
+::-moz-selection {
+  text-shadow: none;
+	color: @brand-lt;
+  background: @brand;
+}
+::selection {
+  text-shadow: none;
+	color: @brand-lt;
+  background: @brand;
+}
+/* ============================ */
+
+/* ============================ */
+/* = framework = */
+/* ============================ */
+body {
+	font-family: @body-font;
+	font-size: @normal;
+	font-weight: normal;
+	line-height: 23px;
+	text-shadow: 0 1px 1px rgba(255,255,255, 0.3);
+	color: @grey;
+	background: @brand-lt;
+  padding-top: 60px;
+}
+/* ============================ */
+
+
+/* ============================ */
+/* = typography = */
+/* ============================ */
+h1,
+h2,
+h3 {
+	font-family: @headline-font;
+	line-height: 38px;
+	margin: 22px 0 8px;
+}
+h4,
+h5,
+h6 {
+	font-family: @body-font;
+	font-weight: bold;
+	color: @grey-dk;
+	margin: 16px 0 6px;
+}
+blockquote {
+	font-style: italic;
+	color: @grey;
+	border-color: @grey-lt;
+	cite {
+		font-size: @small;
+		color: @grey-dk;
+		display: block;
+		margin: 6px 0 2px;
+	}
+}
+/* ============================ */
+
+
+/* ============================ */
+/* = navigation = */
+/* ============================ */
+.navbar-collapse {
+	padding: 0;
+}
+.navbar {
+	background-color: #fff;
+	background-color: rgba(255,255,255, 0.96);
+	border-color: @grey-lt;
+	min-height: 0;
+	margin: 0;
+
+	// ul
+	.navbar-right {
+		text-align: center;
+		float: none;
+		margin: 0 !important;
+	}
+
+	li {
+		float: none;
+		display: inline-block;
+
+		a {
+			color: @grey !important;
+			padding: 10px 12px;
+			&:hover {
+				color: @brand !important;
+			}
+		}
+		> &.active {
+			a {
+				cursor: default;
+				color: @brand !important;
+				background: @brand-lt !important;
+			}
+		}
+	}
+}
+.dropdown-menu {
+	font-size: @normal;
+	li {
+		text-align: left;
+		display: block;
+		a {
+			padding: 6px 12px;
+		}
+		&:hover,
+		&.active {
+
+			a { // these styles override theme colors
+				color: @brand !important;
+				background: @brand-lt;
+			}
+		}
+		&.divider {
+			margin: 5px 0;
+		}
+	}
+}
+.dropdown.active .dropdown-menu {
+	//display: none;
+}
+/* ============================ */
+
+
+/* ============================ */
+/* = branding = */
+/* ============================ */
+// h1
+.navbar-brand {
+	text-indent: -9999px; // shunt actual text off page, replace with logo outlined below
+	.2x('../img/brand/logo-hb.png', "no-repeat", 250px, 85px);
+	background-position: 50%;
+	float: none;
+	min-height: 85px;
+	margin: 36px 0 40px;
+	padding: 0;
+}
+.signature {
+	text-indent: -9999px;
+	.2x('../img/brand/signature-bente.png', "no-repeat", 108px, 39px);
+	background-position: 0 50%;
+	min-height: 39px;
+	margin: 32px 0 14px -8px;
+}
+.cite {
+	font-family: @headline-font;
+	font-size: @small;
+	color: @brand;
+}
+/* ============================ */
+
+
+/* ============================ */
+/* = patterns = */
+/* ============================ */
+.container {
+	max-width: 92%;
+	padding: 0;
+	&.main-content {
+	//	padding: 50px 0 0 0; // hack to allow to jump to ID without nav obscuring
+	}
+	.jumbotron {
+		text-align: center;
+		// h2
+		.pull-out {
+			text-align: center;
+			border-top: 1px dotted @grey-lt;
+		}
+	}
+	.row {
+		margin: 0;
+		h2 {
+			font-size: @big;
+			//font-style: italic;
+			color: @brand;
+			margin: 0 0 14px 0;
+			padding: 14px 0;
+			a {
+				color: @brand-dk;
+				&:hover {
+					text-decoration: none;
+					color: @grey-dk;
+				}
+			}
+			&.pull-out {
+				font-size: 28px;
+				line-height: 36px;
+				color: @brand-dk;
+				border-bottom: 1px dotted @grey-lt;
+				margin: 4px 0 22px 0;
+				padding: 8px 0;
+				span {
+					font-size: @big;
+					color: @brand;
+					display: block;
+				}
+			}
+		}
+		h4 {
+			margin: 24px 0 6px;
+		}
+		ul {
+			margin: 0 0 12px 0;
+			padding: 0;
+			li {
+				list-style: none;
+				margin: 7px 0;
+			}
+		}
+		// column layout on contact page
+		.col {
+			&.left {
+				float: left;
+				width: 60%;
+			}
+			&.right {
+				float: left;
+				width: 40%;
+				padding: 0 0 0 28px;
+			}
+		}
+		.group {
+			clear: both;
+			// ul on contact page
+			.useful-info {
+				margin: 6px 0 12px 0;
+				padding: 0 0 0 20px;
+				li {
+					list-style-type: disc;
+					margin: 10px 0;
+				}
+			}
+		}
+	}
+	// .row
+	.welcome {
+		padding-top: 10px;
+	}
+	// treatments
+	.treatments {
+		.logo-treatment {
+			position: absolute;
+			right: 12px;
+			top: -10px;
+			height: auto;
+			width: 140px;
+			padding: 20px 10px;
+		}
+		.thumb-list-item {
+			padding: 12px 200px 8px 60px;
+			h3 {
+				font-size: @big;
+				line-height: 25px;
+				margin: 0;
+			}
+			.intro {
+				font-size: @small;
+				font-style: italic;
+			}
+			ul {
+				padding: 0 0 0 22px;
+				li {
+					list-style: disc;
+					margin: 10px 0 12px;
+				}
+			}
+		}
+	}
+	// .row
+	.carousel {
+		margin: 40px 0 0 0;
+		.carousel-inner {
+			min-height: 400px;
+		}
+		img {
+			width: auto;
+			height: 350px;
+			display: block;
+			margin: 0 auto;
+		}
+		.carousel-control {
+			font-size: 100px;
+			text-shadow: 0 1px 1px rgba(255,255,255, 0.5);
+			top: 150px;
+		}
+		.carousel-indicators {
+			bottom: 50px;
+			li {
+				border-color: @brand;
+				width: 12px;
+				height: 12px;
+				opacity: 0.7;
+				margin: 0 3px;
+				&.active,
+				&:hover {
+					background-color: @brand;
+				}
+			}
+		}
+		.carousel-caption {
+			position: static;
+			left: 0;
+			right: 0;
+			bottom: -50px;
+			margin: 0;
+			padding: 0;
+			h3 {
+				font-size: 13px;
+				font-style: italic;
+				text-shadow: 0 1px 1px rgba(255,255,255, 0.3);
+				color: @grey;
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+	// .row
+	.feature-imgs {
+		margin: 0;
+		// img
+		.feature {
+			margin: 20px 16px 10px 0;
+			max-height: 200px;
+			width: auto;
+		}
+	}
+	// .row
+	.feature-logos {
+		ul {
+			text-align: center;
+			border-top: 1px dotted @grey-lt;
+			border-bottom: 1px dotted @grey-lt;
+			.clearfix;
+			margin: 20px 0;
+			padding: 14px;
+			li {
+				display: inline-block;
+				background-position: 50%;
+				width: 200px;
+				height: 90px;
+			}
+			.caci {
+				.2x('../img/logos/logo-caci-small.png', "no-repeat", 105px, 28px);
+				background-position: 50% 60%;
+			}
+			.dermaroller {
+				.2x('../img/logos/logo-dermaroller.png', "no-repeat", 116px, 46px);
+			}
+			.jane-iredale {
+				.2x('../img/logos/logo-jane-iredale.png', "no-repeat", 134px, 41px);
+			}
+			.juvederm {
+				.2x('../img/logos/logo-juvederm.png', "no-repeat", 154px, 37px);
+			}
+			.lynton {
+				.2x('../img/logos/logo-lynton.png', "no-repeat", 96px, 52px);
+			}
+			.revitalash {
+				.2x('../img/logos/logo-revitalash-small.png', "no-repeat", 95px, 30px);
+			}
+			.restylane {
+				.2x('../img/logos/logo-restylane.png', "no-repeat", 127px, 52px);
+			}
+			.sculptra {
+				.2x('../img/logos/logo-sculptra.png', "no-repeat", 162px, 35px);
+			}
+			.skin-ceuticals {
+				.2x('../img/logos/logo-skin-ceuticals.png', "no-repeat", 155px, 20px);
+			}
+		}
+	}
+	.footer {
+		font-size: 11px;
+		color: lighten(@grey, 20%);
+		background-position: 50% 50%;
+		margin: 20px 0 40px;
+		padding: 20px 0 40px;
+		.left {
+			float: left;
+		}
+		.right {
+			float: right;
+		}
+	}
+	// links
+	a {
+		cursor: pointer;
+		color: @brand;
+		&:hover {
+			color: @brand-dk;
+		}
+	}
+	// imgs
+	.img-body {
+		width: 240px;
+		height: 100%;
+		background: #fff;
+	  box-shadow: 0 1px 2px rgba(0,0,0, 0.08);
+		border: 1px solid @grey;
+		border-radius: 2px;
+		padding: 1px;
+		margin: 4px;
+		&.left {
+			float: left;
+			margin: 0 24px 14px 0;
+		}
+		&.right {
+			float: right;
+			margin: 0 0 14px 24px;
+		}
+	}
+	// google map
+	.map {
+		width: 100%;
+		min-height: 300px;
+		background: #fff;
+	  box-shadow: 0 1px 2px rgba(0,0,0, 0.035);
+		border: 1px solid @grey;
+		border-radius: 2px;
+		padding: 1px;
+		margin: 6px 0 24px;
+	}
+	// news
+	.jump-to-label {
+		font-family: @body-font;
+		font-size: 15px;
+		font-weight: bold;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		display: inline-block;
+		margin: 0 8px 12px 0;
+	}
+	.jump-to.news {
+		top: -2px;
+	}
+	// alerts
+	.alert {
+		margin: 20px 0;
+		a {
+			color: #d9534f;
+			&:hover {
+				color: #d2322d;
+			}
+		}
+	}
+	.alert-dismissable .close {
+		top: 1px;
+	}
+	// treatments page
+	h2.treatment-section-label {
+		font-family: @body-font;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		color: @grey;
+		border-bottom: 1px solid darken(@brand-lt, 6%);
+		position: relative;
+		margin: 70px 0 10px 0;
+		padding: 0;
+		&:first-child {
+			margin-top: 20px;
+			//padding: 20px 14px 0;
+		}
+		a {
+			color: @brand;
+			&:hover {
+				text-decoration: underline;
+				color: @brand;
+			}
+		}
+		&.secondary {
+			margin: 40px 0 10px;
+		}
+	}
+	.thumb-list-item {
+		border-bottom: 1px dotted @grey-lt;
+		.clearfix;
+		padding: 50px 0;
+		&:first-child {
+			//border-top: 1px dotted @grey-lt;
+		}
+		.img-body {
+			float: left;
+			width: 180px;
+			margin: 0 32px 0 0;
+		}
+		.thumb-container {
+			overflow: hidden;
+			width: 240px;
+			img {
+				display: block;
+				max-width: 160px;
+				margin: 0 auto;
+				padding: 58px 0 62px;
+			}
+		}
+		h3 {
+			color: @grey-dk;
+			margin: 0 0 6px 0;
+			span {
+				font-size: @small;
+				//text-transform: capitalize;
+				color: @brand;
+				margin: 0 9px;
+			}
+			a {
+				color: @grey-dk;
+				&:hover {
+					color: @brand;
+				}
+			}
+		}
+	}
+	// buttons
+	button:focus {
+		outline: none;
+	}
+	.btn-primary {
+		text-shadow: 0 1px 1px rgba(0,0,0, 0.15);
+	  color: #fff;
+	  background-color: @brand;
+	  box-shadow: inset 0 1px 1px rgba(255,255,255, 0.35), 0 1px 1px rgba(0,0,0, 0.2);
+	  border-color: @brand-dk;
+	  margin: 8px 6px 8px 0;
+		&:hover {
+			text-shadow: 0 -1px 1px rgba(0,0,0, 0.3);
+			color: @off-white;
+		  box-shadow: inset 0 0px 0px 1px rgba(255,255,255, 0.15), 0 1px 1px rgba(0,0,0, 0.3);
+		  background-color: darken(@brand,10%);
+		  border-color: darken(@brand-dk, 20%);
+		}
+		&:active {
+			text-shadow: 0 -1px 1px rgba(0,0,0, 0.3);
+			background-color: @brand;
+		  box-shadow: inset 0 1px 3px rgba(0,0,0, 0.2), 0 1px 1px rgba(255,255,255, 0.5);
+			box-shadow: none;
+		  border-color: @brand-dk;
+		}
+		&.secondary {
+			text-shadow: none;
+		  background-color: @grey;
+		  box-shadow: none;
+		  border-color: @grey;
+		  &:hover {
+			  cursor: default;
+				text-shadow: none;
+				background-color: @grey;
+			  box-shadow: none;
+			  border-color: @grey;
+		  }
+		}
+	}
+}
+/* ============================ */
+
+// patterns
+// reveal more info on treatments page
+#accordion {
+	margin: 0 0 10px 0;
+	.panel-collapse {
+		margin: 12px 0;
+	}
+}
+
+
+// modal
+.modal {
+	//background: @off-white;
+	padding-top: 60px;
+	margin: 0;
+}
+.body.modal-open {
+	margin: 0;
+}
+.modal-header,
+.modal-body {
+	background: @off-white;
+	border-top: 1px solid #fff;
+	border-radius: 2px 2px 0 0;
+	width: 80%;
+	margin: 0 auto;
+	padding: 30px 40px 12px;
+}
+.modal-header {
+	border-top: none;
+	border-bottom: none;
+	h3 {
+		color: @grey;
+		margin: 8px 0;
+	}
+	.close {
+		font-size: 40px;
+		margin: -22px -22px 0 0;
+	}
+}
+.modal-body {
+	border-top: none;
+	border-radius: 0 0 2px 2px;
+	padding: 0 40px 30px;
+}
+
+
+/* ============================ */
+/* = media queries: small screen = */
+/* ============================ */
+@media (max-width: 768px) {
+	.container {
+		// minor adjustment to typography
+		h2,
+		h3 {
+			font-size: 20px;
+			line-height: 26px;
+		}
+		.img-body { // hide photos on mobile
+			display: none;
+		}
+	  .footer {
+		  .footer-info { // center align footer content
+		  	text-align: center;
+			  float: none;
+			  display: block;
+		  }
+	  }
+	}
+}
+/* ============================ */
+
