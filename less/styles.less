@@ -259,8 +259,10 @@ blockquote {
 				padding: 8px 0;
 				span {
 					font-size: @big;
+					line-height: 27px;
 					color: @brand;
 					display: block;
+					margin-top: 6px;
 				}
 			}
 		}
@@ -374,10 +376,11 @@ blockquote {
 			padding: 0;
 			h3 {
 				font-size: 13px;
+				line-height: 20px;
 				font-style: italic;
 				text-shadow: 0 1px 1px rgba(255,255,255, 0.3);
 				color: @grey;
-				margin: 0;
+				margin: 4px 0 0 0;
 				padding: 0;
 			}
 		}
@@ -413,6 +416,9 @@ blockquote {
 			}
 			.dermaroller {
 				.2x('../img/logos/logo-dermaroller.png', "no-repeat", 116px, 46px);
+			}
+			.heliocare {
+				.2x('../img/logos/logo-heliocare.png', "no-repeat", 135px, 30px);
 			}
 			.jane-iredale {
 				.2x('../img/logos/logo-jane-iredale.png', "no-repeat", 134px, 41px);
@@ -671,6 +677,12 @@ blockquote {
 /* = media queries: small screen = */
 /* ============================ */
 @media (max-width: 768px) {
+	.navbar .navbar-nav {
+		text-align: left;
+		li {
+			display: block;
+		}
+	}
 	.container {
 		// minor adjustment to typography
 		h2,
@@ -678,8 +690,20 @@ blockquote {
 			font-size: 20px;
 			line-height: 26px;
 		}
-		.img-body { // hide photos on mobile
+		.carousel { // hide slideshow
 			display: none;
+		}
+		.jumbotron {
+			padding: 40px 20px;
+		}
+		.img-body { // hide photos
+			display: none;
+		}
+		.row .col.left,
+		.row .col.right { // create one column layout
+			float: none;
+			width: auto;
+			padding: 0;
 		}
 	  .footer {
 		  .footer-info { // center align footer content
