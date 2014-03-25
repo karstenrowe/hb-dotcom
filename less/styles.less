@@ -623,6 +623,19 @@ blockquote {
 		  }
 		}
 	}
+	// inputs
+	input {
+		&.email { // only targets MailChimp enews widget at the moment
+			border: 1px solid @brand;
+			border-radius: 2px;
+			padding: 4px 5px;
+			margin: 0 4px;
+			&:hover,
+			&:focus {
+				border: 1px solid @brand-dk;
+			}
+		}
+	}
 }
 /* ============================ */
 
@@ -634,7 +647,6 @@ blockquote {
 		margin: 12px 0;
 	}
 }
-
 
 // modal
 .modal {
