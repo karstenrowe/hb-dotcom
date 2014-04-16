@@ -86,7 +86,7 @@ body {
 	text-shadow: 0 1px 1px rgba(255,255,255, 0.3);
 	color: @grey;
 	background: @brand-lt;
-  padding-top: 60px;
+  padding-top: 40px; // allow for fixed header height
 }
 /* ============================ */
 
@@ -130,6 +130,12 @@ blockquote {
 	padding: 0;
 }
 .navbar {
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+     -moz-animation: fadein 2s; /* Firefox */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+       -o-animation: fadein 2s; /* Opera */
+          animation: fadein 2s;
+
 	background-color: #fff;
 	background-color: rgba(255,255,255, 0.96);
 	border-color: @grey-lt;
@@ -152,6 +158,13 @@ blockquote {
 			padding: 10px 12px;
 			&:hover {
 				color: @brand !important;
+				background: @brand-lt !important;
+			}
+		}
+		&.active {
+			a {
+				color: @brand !important;
+				background: @brand-lt !important;
 			}
 		}
 		> &.active {
@@ -222,11 +235,8 @@ blockquote {
 /* = patterns = */
 /* ============================ */
 .container {
-	max-width: 92%;
+	max-width: 80%;
 	padding: 0;
-	&.main-content {
-	//	padding: 50px 0 0 0; // hack to allow to jump to ID without nav obscuring
-	}
 	.jumbotron {
 		text-align: center;
 		// h2
@@ -239,7 +249,6 @@ blockquote {
 		margin: 0;
 		h2 {
 			font-size: @big;
-			//font-style: italic;
 			color: @brand;
 			margin: 0 0 14px 0;
 			padding: 14px 0;
@@ -267,26 +276,18 @@ blockquote {
 			}
 		}
 		h4 {
-			margin: 24px 0 6px;
+			margin: 28px 0 12px;
 		}
 		ul {
-			margin: 0 0 12px 0;
+			margin: 0 0 16px 0;
 			padding: 0;
 			li {
 				list-style: none;
 				margin: 7px 0;
-			}
-		}
-		// column layout on contact page
-		.col {
-			&.left {
-				float: left;
-				width: 60%;
-			}
-			&.right {
-				float: left;
-				width: 40%;
-				padding: 0 0 0 28px;
+				.fa {
+					color: @brand;
+					margin-right: 8px;
+				}
 			}
 		}
 		.group {
@@ -317,7 +318,7 @@ blockquote {
 			padding: 20px 10px;
 		}
 		.thumb-list-item {
-			padding: 12px 200px 8px 60px;
+			width: 82%;
 			h3 {
 				font-size: @big;
 				line-height: 25px;
@@ -340,11 +341,11 @@ blockquote {
 	.carousel {
 		margin: 40px 0 0 0;
 		.carousel-inner {
-			min-height: 400px;
+			min-height: 300px;
 		}
 		img {
 			width: auto;
-			height: 350px;
+			height: 250px;
 			display: block;
 			margin: 0 auto;
 		}
@@ -443,23 +444,11 @@ blockquote {
 			}
 		}
 	}
-	.footer {
-		font-size: 11px;
-		color: lighten(@grey, 20%);
-		background-position: 50% 50%;
-		margin: 20px 0 40px;
-		padding: 20px 0 40px;
-		.left {
-			float: left;
-		}
-		.right {
-			float: right;
-		}
-	}
 	// links
 	a {
 		cursor: pointer;
 		color: @brand;
+		transition: all .11s ease-in-out;
 		&:hover {
 			color: @brand-dk;
 		}
@@ -482,17 +471,6 @@ blockquote {
 			float: right;
 			margin: 0 0 14px 24px;
 		}
-	}
-	// google map
-	.map {
-		width: 100%;
-		min-height: 300px;
-		background: #fff;
-	  box-shadow: 0 1px 2px rgba(0,0,0, 0.035);
-		border: 1px solid @grey;
-		border-radius: 2px;
-		padding: 1px;
-		margin: 6px 0 24px;
 	}
 	// news
 	.jump-to-label {
@@ -532,7 +510,6 @@ blockquote {
 		padding: 0;
 		&:first-child {
 			margin-top: 20px;
-			//padding: 20px 14px 0;
 		}
 		a {
 			color: @brand;
@@ -548,10 +525,7 @@ blockquote {
 	.thumb-list-item {
 		border-bottom: 1px dotted @grey-lt;
 		.clearfix;
-		padding: 50px 0;
-		&:first-child {
-			//border-top: 1px dotted @grey-lt;
-		}
+		padding: 22px 0;
 		.img-body {
 			float: left;
 			width: 180px;
@@ -572,9 +546,10 @@ blockquote {
 			margin: 0 0 6px 0;
 			span {
 				font-size: @small;
-				//text-transform: capitalize;
+				line-height: 20px;
 				color: @brand;
-				margin: 0 9px;
+				display: block;
+				margin: 0 0 10px 0;
 			}
 			a {
 				color: @grey-dk;
@@ -626,12 +601,17 @@ blockquote {
 	// inputs
 	input {
 		&.email { // only targets MailChimp enews widget at the moment
-			border: 1px solid @brand;
-			border-radius: 2px;
-			padding: 4px 5px;
-			margin: 0 4px;
-			&:hover,
+			outline: none;
+			border: 1px solid @grey;
+			border-radius: 3px;
+			width: 100%;
+			margin: 0 0 4px 0;
+			padding: 5px 6px;
+			&:hover {
+				border: 1px solid @brand;
+			}
 			&:focus {
+				box-shadow: 0 0px 5px lighten(@brand, 30%);
 				border: 1px solid @brand-dk;
 			}
 		}
@@ -650,7 +630,6 @@ blockquote {
 
 // modal
 .modal {
-	//background: @off-white;
 	padding-top: 60px;
 	margin: 0;
 }
@@ -685,30 +664,65 @@ blockquote {
 }
 
 
+
+.footer {
+	border-top: 1px solid @grey-lt;
+	background: #fff;
+	color: lighten(@grey, 20%);
+	margin: 40px 0 0;
+	padding: 30px 0 34px;
+	.left {
+		font-size: @small;
+		float: left;
+	}
+	.right {
+		font-size: 19px;
+		float: right;
+		padding-top: 12px;
+		a {
+			margin: 0 5px;
+		}
+	}
+	p {
+		color: @brand;
+	}
+	.contact-detail {
+		margin: 0 5px 0 0;
+	}
+}
+
+// google map
+.map {
+	width: 100%;
+	min-height: 300px;
+	background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0, 0.035);
+	border: 1px solid @grey;
+	padding: 1px;
+	margin: 6px 0;
+}
+
+
 /* ============================ */
 /* = media queries: small screen = */
 /* ============================ */
 @media (max-width: 768px) {
-	.navbar .navbar-nav {
+	.navbar li {
 		text-align: left;
-		li {
-			display: block;
-		}
+		display: block;
 	}
 	.container {
+		max-width: 88%;
 		// minor adjustment to typography
 		h2,
 		h3 {
 			font-size: 20px;
 			line-height: 26px;
 		}
-		.carousel { // hide slideshow
-			display: none;
-		}
 		.jumbotron {
-			padding: 40px 20px;
+			padding: 20px 0;
 		}
-		.img-body { // hide photos
+		.carousel { // hide slideshow
 			display: none;
 		}
 		.row .col.left,
@@ -717,14 +731,43 @@ blockquote {
 			width: auto;
 			padding: 0;
 		}
-	  .footer {
-		  .footer-info { // center align footer content
-		  	text-align: center;
-			  float: none;
-			  display: block;
-		  }
-	  }
 	}
+  .footer-info {
+		&.left,
+		&.right {
+			float: none;
+		}
+  }
 }
 /* ============================ */
 
+
+// css3 animations for header
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
