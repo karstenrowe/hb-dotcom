@@ -516,29 +516,26 @@ blockquote {
 	button:focus {
 		outline: none;
 	}
-	.btn-primary {
-		text-shadow: 0 1px 1px rgba(0,0,0, 0.15);
-	  color: #fff;
-	  background-color: @brand;
-	  box-shadow: inset 0 1px 1px rgba(255,255,255, 0.35), 0 1px 1px rgba(0,0,0, 0.2);
-	  border-color: @brand-dk;
-	  margin: 8px 6px 8px 0;
+	.btn-primary,
+	input[type="submit"] {
+		text-shadow: none;
+	  color: @brand;
+	  background-color: @brand-lt;
+	  border: 2px solid @brand;
+	  margin: 6px 6px 8px 0;
 		&:hover {
-			text-shadow: 0 -1px 1px rgba(0,0,0, 0.3);
 			color: @off-white;
-		  box-shadow: inset 0 0px 0px 1px rgba(255,255,255, 0.15), 0 1px 1px rgba(0,0,0, 0.3);
-		  background-color: darken(@brand,10%);
-		  border-color: darken(@brand-dk, 20%);
-		}
-		&:active {
-			text-shadow: 0 -1px 1px rgba(0,0,0, 0.3);
 			background-color: @brand;
-		  box-shadow: inset 0 1px 3px rgba(0,0,0, 0.2), 0 1px 1px rgba(255,255,255, 0.5);
+			border-color: @brand-dk;
+		}
+		&:active,
+		&:focus {
+			outline: none;
+			background-color: @brand-dk;
 			box-shadow: none;
 		  border-color: @brand-dk;
 		}
 		&.secondary {
-			text-shadow: none;
 		  background-color: @grey;
 		  box-shadow: none;
 		  border-color: @grey;
@@ -551,23 +548,34 @@ blockquote {
 		  }
 		}
 	}
+	input[type="submit"] {
+/*
+		float: right;
+		margin: 8px 0 8px 6px;
+*/
+	}
 	// inputs
-	input {
-		&.email { // only targets MailChimp enews widget at the moment
-			outline: none;
-			border: 1px solid @grey;
-			border-radius: 3px;
-			width: 100%;
-			margin: 0 0 4px 0;
-			padding: 5px 6px;
-			&:hover {
-				border: 1px solid @brand;
-			}
-			&:focus {
-				box-shadow: 0 0px 5px lighten(@brand, 30%);
-				border: 1px solid @brand-dk;
-			}
+	input,
+	textarea {
+		outline: none;
+		border: 2px solid @grey;
+		border-radius: 3px;
+		width: 100%;
+		margin: 3px 0 11px 0;
+		padding: 5px 6px;
+		&:hover {
+			border: 2px solid @brand;
 		}
+		&:focus {
+			box-shadow: 0 0px 5px lighten(@brand, 30%);
+			border: 2px solid @brand-dk;
+		}
+	}
+	textarea {
+		min-height: 140px;
+	}
+	input[type="submit"] {
+		width: auto;
 	}
 }
 /* ============================ */
@@ -741,6 +749,13 @@ blockquote {
   }
 }
 /* ============================ */
+
+// contact form
+#contact-area {
+	max-width: 460px;
+}
+
+
 
 
 // css3 animations for header

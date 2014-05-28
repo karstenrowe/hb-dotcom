@@ -34,6 +34,16 @@
 
   <body>
 
+		<!-- Facebook like button -->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -76,7 +86,7 @@
 
     <h1 class="navbar-brand">Welcome to Harrogate Health & Beauty Cosmetic Clinic. A specialist in Botox, dermal fillers, Juvederm, skin peels, hair removal, anti-ageing treatments and meso injections to help combat the signs of ageing skin.</h1>
 
-		<div class="group">
+		<div class="container">
 <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9380.680005527223!2d-1.547277!3d53.999758!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x31ae88e07fa5c899!2sHarrogate+Health+%26+Beauty+Cosmetic+Clinic!5e0!3m2!1sen!2suk!4v1397648722588" frameborder="0" ></iframe>
     </div>
 
@@ -84,14 +94,25 @@
 
       <div class="row">
 
-				<div class="col-md-8">
-					<h4>Contact details</h4>
-					<ul>
-						<li>Harrogate Health & Beauty Cosmetic Clinic</li>
-						<li>25 Ripon Road, Harrogate, HG1 2JL.</li>
-						<li>01423 563 108</li>
-						<li><a href="mailto:bente@harrogatehealthandbeauty.com?Subject=Website%20enquiry" target="_top">bente@harrogatehealthandbeauty.com</a></li>
-					</ul>
+				<div class="col-md-7">
+
+					<h4>Send a message</h4>
+
+					<div id="contact-area">
+						<form method="post" action="contactengine.php">
+							<label for="Name">Name</label>
+							<input type="text" name="Name" id="Name" />
+
+							<label for="Email">Email</label>
+							<input type="text" name="Email" id="Email" />
+
+							<label for="Message">Message</label>
+							<textarea name="Message" id="Message"></textarea>
+
+							<input type="submit" name="submit" value="Submit" class="submit-button" />
+						</form>
+					</div>
+
 					<h4>Useful information</h4>
 					<ul class="useful-info">
 						<li><i class="fa fa-angle-right"></i>Early morning and late night appointments on request.</li>
@@ -106,24 +127,33 @@
 					</ul>
 				</div>
 
-				<div class="col-md-4">
+				<div class="col-md-5">
+					<h4>Contact details</h4>
+					<ul>
+						<li>Harrogate Health & Beauty Cosmetic Clinic</li>
+						<li>25 Ripon Road, Harrogate, HG1 2JL.</li>
+						<li>01423 563 108</li>
+						<li><a href="mailto:bente@harrogatehealthandbeauty.com?Subject=Website%20enquiry" target="_top">bente@harrogatehealthandbeauty.com</a></li>
+					</ul>
 					<h4>Downloads</h4>
 					<ul>
-						<li><a class="" target="_blank" style="text-decoration: line-through;"><i class="fa fa-file-o"></i>View price list</a></li>
-						<li><a class="" target="_blank" style="text-decoration: line-through;"><i class="fa fa-file-o"></i>Download print-friendly price list</a></li>
-						<li><small>Online and print-friendly price list coming soon :)</small></li>
+						<li><a href="../../download/price-list-harrogatehealthandbeauty.pdf" target="_blank"><i class="fa fa-file-o"></i>View price list</a></li>
+						<li><a href="../../download/price-list-harrogatehealthandbeauty.pdf" download><i class="fa fa-file-o"></i>Download price list</a></li>
 					</ul>
 					<h4>Sign up to newsletter</h4>
 					<!-- Begin MailChimp Signup Form -->
 					<div id="mc_embed_signup">
 						<form action="http://karstenrowe.us1.list-manage.com/subscribe/post?u=365f944626151085724849190&amp;id=db9fee7a61" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-							<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+							<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email address" required>
 						    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 						    <div style="position: absolute; left: -5000px;"><input type="text" name="b_365f944626151085724849190_db9fee7a61" value=""></div>
 							<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-lg btn-primary"></div>
 						</form>
 					</div>
 					<!--End mc_embed_signup-->
+					<h4>Follow us on Facebook</h4>
+					<div class="fb-like-box" data-href="https://www.facebook.com/harrogatehealthandbeauty" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="false" data-show-border="false">
+					</div>
 				</div>
 
 			</div>

@@ -34,6 +34,16 @@
 
   <body>
 
+		<!-- Facebook like button -->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -83,7 +93,7 @@
 			  <a href="https://www.facebook.com/harrogatehealthandbeauty">Follow us on Facebook</a> for latest product news and promotions.
 			</div>
 
-      <div class="row col-md-9">
+      <div class="row col-md-8">
 
 				<div class="thumb-list-item">
 					<h3>H&B Newsletter – May Edition<span>Written on Tuesday 6th May, 2014</span></h3>
@@ -164,21 +174,22 @@
 				</div>
       </div>
 
-			<div class="row col-md-3">
-				<div class="thumb-list-item">
-					<!-- Begin MailChimp Signup Form -->
-					<div id="mc_embed_signup">
-					<form action="http://karstenrowe.us1.list-manage.com/subscribe/post?u=365f944626151085724849190&amp;id=db9fee7a61" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-						<label for="mce-EMAIL">Subscribe to our newsletter</label>
-						<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-					    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-					    <div style="position: absolute; left: -5000px;"><input type="text" name="b_365f944626151085724849190_db9fee7a61" value=""></div>
-						<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-lg btn-primary"></div>
-					</form>
-					</div>
-					<!--End mc_embed_signup-->
+			<div class="row col-md-4">
+				<!-- Begin MailChimp Signup Form -->
+				<div id="mc_embed_signup">
+				<form action="http://karstenrowe.us1.list-manage.com/subscribe/post?u=365f944626151085724849190&amp;id=db9fee7a61" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<h4 for="mce-EMAIL">Subscribe to our newsletter</h4>
+					<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+				    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				    <div style="position: absolute; left: -5000px;"><input type="text" name="b_365f944626151085724849190_db9fee7a61" value=""></div>
+					<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-lg btn-primary"></div>
+				</form>
 				</div>
-			</div>
+				<!--End mc_embed_signup-->
+				<h4>Follow us on Facebook</h4>
+				<div class="fb-like-box" data-href="https://www.facebook.com/harrogatehealthandbeauty" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="false" data-show-border="false">
+				</div>
+		</div>
 
     </div> <!-- /container -->
 
