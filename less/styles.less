@@ -55,6 +55,8 @@
 @grey: #726a5d; // warm grey
 @grey-lt: #e9e5de;
 
+@highlight: #ffffea; // yellow
+
 @off-white-dk: darken(@off-white, 7%);
 @off-white: #fcfaf6;
 /* ============================ */
@@ -580,7 +582,7 @@ blockquote {
 	border-top: 1px solid @grey-lt;
 	background: #fff;
 	color: lighten(@grey, 20%);
-	margin: 40px 0 0;
+	margin: 0;
 	padding: 30px 0 34px;
 	.left {
 		font-size: @small;
@@ -713,6 +715,34 @@ blockquote {
 			margin: 4px 0 0 0;
 			padding: 0;
 		}
+	}
+}
+
+// testimonial
+.testimonial {
+	text-align: center;
+	background: @highlight;
+	border-top: 1px solid @grey-lt;
+	margin: 20px 0 0 0;
+	padding: 0 0 15px 0;
+	blockquote {
+		font-family: @headline-font;
+		border: none;
+		margin: 0;
+	}
+	cite {
+		font-family: @body-font;
+		color: @brand;
+		display: inline-block;
+		background: #fff;
+	}
+	a {
+		font-size: @small;
+	}
+	.modal-header,
+	.modal-body {
+		text-align: left;
+		width: auto;
 	}
 }
 
