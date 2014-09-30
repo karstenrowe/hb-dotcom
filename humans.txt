@@ -4,8 +4,4 @@
 /* TEAM */
 	Design & Development Lead: Karsten Rowe
 	Twitter: @karstenrowe
-<<<<<<< HEAD
 	Location: Harrogate, U.K.
-=======
-	Location: London, U.K.
->>>>>>> 76adc8ad2d16c80f848b413825f615a0024729f6
