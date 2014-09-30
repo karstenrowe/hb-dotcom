@@ -1,0 +1,850 @@
+// Created: @karstenrowe 06-12-2013
+// Project: Harrogate Health & Beauty web build
+
+// import bootstrap
+@import "bootstrap.less";
+
+// import individual less files
+@import "form-elements.less";
+@import "footer.less";
+@import "sidemenu.less";
+
+/* ============================ */
+/* = font = */
+/* ============================ */
+@headline-font: 'Noto Serif', serif; // 400
+@body-font: 'Noto Sans', sans-serif; // 400, 700, 400italic
+
+@big: 17px; // line-height: 23px;
+@normal: 15px; // line-height: 23px;
+@small: 13px; // line-height: 16px;
+/* ============================ */
+
+
+/* ============================ */
+/* = toolbox = */
+/* ============================ */
+// retina mixin
+@highdpi: ~"(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx)";
+
+.2x(@path, @position, @w: auto, @h: auto) {
+	background-image: url(@path);
+	background-repeat: ~"@{position}";
+	@at2x_path: ~`"@{path}".split('.').slice(0, "@{path}".split('.').length - 1).join(".") + "_2x" + "." + "@{path}".split('.')["@{path}".split('.').length - 1]`;
+
+	@media @highdpi {
+		background-image: url(@at2x_path);
+		background-repeat: ~"@{position}";
+		background-size: @w @h;
+	}
+}
+// clearfix
+.clearfix() {
+	zoom: 1;
+	&:before,
+	&:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+	&:after { clear: both; }
+}
+/* ============================ */
+
+
+/* ============================ */
+/* = color = */
+/* ============================ */
+@brand-dk: #1d2262;
+@brand: #7b6fb1; // lilac purple
+@brand-lt: #faf9fd;
+
+@grey-dk: #3e3a34;
+@grey: #726a5d; // warm grey
+@grey-lt: #e9e5de;
+
+@highlight: #ffffea; // yellow
+
+@off-white-dk: darken(@off-white, 7%);
+@off-white: #fcfaf6;
+/* ============================ */
+
+
+/* ============================ */
+/* = selection color = */
+/* ============================ */
+::-moz-selection {
+  text-shadow: none;
+	color: @brand-lt;
+  background: @brand;
+}
+::selection {
+  text-shadow: none;
+	color: @brand-lt;
+  background: @brand;
+}
+/* ============================ */
+
+/* ============================ */
+/* = framework = */
+/* ============================ */
+body {
+	font-family: @body-font;
+	font-size: @normal;
+	font-weight: normal;
+	line-height: 23px;
+	text-shadow: 0 1px 1px rgba(255,255,255, 0.3);
+	color: @grey;
+	background: @brand-lt;
+  padding-top: 40px; // allow for fixed header height
+}
+/* ============================ */
+
+
+/* ============================ */
+/* = typography = */
+/* ============================ */
+h1,
+h2,
+h3 {
+	font-family: @headline-font;
+	line-height: 38px;
+	margin: 22px 0 8px;
+}
+h4,
+h5,
+h6 {
+	font-family: @body-font;
+	font-weight: bold;
+	color: @grey-dk;
+	margin: 18px 0 6px;
+}
+blockquote {
+	font-family: @headline-font;
+	font-size: @big;
+	line-height: 28px;
+	font-style: italic;
+	color: @grey;
+	background-color: #fff;
+	border-color: @brand;
+	margin: 20px 0;
+	cite {
+		font-size: @small;
+		color: @grey-dk;
+		display: block;
+		margin: 6px 0 2px;
+	}
+}
+p {
+	&.lead {
+		font-size: @big;
+		line-height: 28px;
+	}
+}
+/* ============================ */
+
+
+/* ============================ */
+/* = navigation = */
+/* ============================ */
+.navbar-collapse {
+	padding: 0;
+}
+.navbar {
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+     -moz-animation: fadein 2s; /* Firefox */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+       -o-animation: fadein 2s; /* Opera */
+          animation: fadein 2s;
+
+	background-color: #fff;
+	background-color: rgba(255,255,255, 0.96);
+	border-color: @grey-lt;
+	min-height: 0;
+	margin: 0;
+
+	// ul
+	.navbar-right {
+		text-align: center;
+		float: none;
+		margin: 0 !important;
+	}
+
+	li {
+		float: none;
+		display: inline-block;
+
+		a {
+			font-size: @big;
+			color: @grey !important;
+			border-color: @brand;
+			padding: 15px 20px;
+			&:hover {
+				color: @brand !important;
+				background: @brand-lt !important;
+			}
+			.caret {
+				border-top-color: @brand;
+				border-bottom-color: @brand;
+			}
+		}
+		&.active {
+			> a {
+				color: @brand !important;
+				background: @brand-lt !important;
+				border-bottom: 1px solid @brand;
+				margin-bottom: -1px;
+			}
+		}
+		> &.active {
+			a {
+				cursor: default;
+				color: @brand !important;
+				background: @brand-lt !important;
+			}
+		}
+	}
+}
+.dropdown-menu {
+	font-size: @normal;
+	li {
+		text-align: left;
+		display: block;
+		a {
+			padding: 6px 12px;
+		}
+		&:hover,
+		&.active {
+
+			a { // these styles override theme colors
+				color: @brand !important;
+				background: @brand-lt;
+				border: none;
+			}
+		}
+		&.divider {
+			margin: 5px 0;
+		}
+	}
+}
+/* ============================ */
+
+
+/* ============================ */
+/* = branding = */
+/* ============================ */
+// h1
+.navbar-brand {
+	text-indent: -9999px; // shunt actual text off page, replace with logo outlined below
+	.2x('../img/brand/logo-hb.png', "no-repeat", 250px, 85px);
+	background-position: 50%;
+	float: none;
+	min-height: 85px;
+	margin: 36px 0 40px;
+	padding: 0;
+	position: relative;
+	z-index: 2;
+}
+.signature {
+	text-indent: -9999px;
+	.2x('../img/brand/signature-bente.png', "no-repeat", 108px, 39px);
+	background-position: 0 50%;
+	min-height: 39px;
+	margin: 32px 0 14px -8px;
+}
+.cite {
+	font-family: @headline-font;
+	font-size: @small;
+	color: @brand;
+}
+/* ============================ */
+
+
+/* ============================ */
+/* = patterns = */
+/* ============================ */
+.container {
+	&.main-content {
+		margin-bottom: 30px;
+	}
+	.jumbotron {
+		text-align: center;
+		margin-bottom: 0;
+		// h2
+		.pull-out {
+			border-bottom: none !important;
+		}
+	}
+	.row {
+		overflow: hidden;
+		h2 {
+			font-size: 19px;
+			color: @brand;
+			margin: 0 0 14px 0;
+			padding: 14px 0;
+			a {
+				color: @brand-dk;
+				&:hover {
+					text-decoration: none;
+					color: @grey-dk;
+				}
+			}
+			&.pull-out {
+				font-size: 28px;
+				line-height: 36px;
+				color: @brand-dk;
+				border-bottom: 1px dotted @grey-lt;
+				margin: 4px 0 22px 0;
+				padding: 8px 0;
+				span {
+					font-size: @big;
+					line-height: 27px;
+					color: @brand;
+					display: block;
+					margin-top: 6px;
+				}
+			}
+		}
+		h4 {
+			margin: 28px 0 12px;
+		}
+		ul {
+			margin: 0 0 16px 0;
+			padding: 0;
+			li {
+				list-style: none;
+				margin: 7px 0;
+				.fa {
+					color: @brand;
+					margin-right: 8px;
+				}
+			}
+		}
+		.group {
+			clear: both;
+			// ul on contact page
+			.useful-info {
+				margin: 6px 0 12px 0;
+				padding: 0 0 0 20px;
+				li {
+					list-style-type: disc;
+					margin: 10px 0;
+				}
+			}
+		}
+	}
+	// treatments
+	.treatments-products {
+		.brand-logo {
+			text-align: center;
+			float: right;
+			position: relative;
+			top: -40px;
+			height: auto;
+			width: 220px;
+			margin-left: 20px;
+			img {
+				padding: 30px;
+				height: auto;
+				width: 220px;
+			}
+			span.website-cta {
+				text-shadow: 0 1px 1px white;
+				opacity: 0;
+				background: rgba(255,255,255,0.9);
+				display: inline-block;
+				width: 120px;
+				box-sizing: border-box;
+				position: absolute;
+				top: 40%;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+			}
+			&:hover {
+				color: @brand;
+				img {
+					border: 1px solid @brand;
+				}
+				span.website-cta {
+					opacity: 1;
+				}
+			}
+		}
+
+		.thumb-list-item {
+			h3 {
+				font-family: @body-font;
+				font-size: @big;
+				font-weight: bold;
+				line-height: 25px;
+				margin: 0 0 6px 0;
+			}
+			ul {
+				padding: 0 0 0 22px;
+				li {
+					list-style: disc;
+					margin: 10px 0 12px;
+				}
+			}
+		}
+	}
+	// .row
+	.single-col {
+		max-width: 800px;
+		margin: 0 auto;
+		// img
+		.feature {
+			margin: 20px 0;
+			width: 100%;
+		}
+		ul.feature-list {
+			margin: 40px 0 60px 0;
+			li {
+				min-height: 190px;
+				margin-left: 160px;
+				padding: 12px 0;
+				h3 {
+					color: @brand-dk;
+				}
+				.meta-description {
+					font-family: @body-font;
+					font-size: @normal;
+					display: inline-block;
+					margin-bottom: 12px;
+					a { margin: 0 5px 0 2px; }
+				}
+				.twitter-handle {
+					font-family: @body-font;
+					font-size: @normal;
+					display: inline-block;
+					.fa.fa-twitter {
+						margin-right: 3px !important;
+					}
+				}
+
+				.avatar {
+					float: left;
+					margin: 10px 30px 20px -160px;
+				}
+			}
+			blockquote {
+				background: none;
+				border: none;
+				margin: 0;
+				padding: 0;
+				p {
+					font-size: @normal;
+					line-height: 22px;
+				}
+			}
+		}
+	}
+	// imgs
+	.img-body {
+		width: 240px;
+		height: 100%;
+		background: #fff;
+	  box-shadow: 0 1px 2px rgba(0,0,0, 0.08);
+		border: 1px solid @grey;
+		border-radius: 2px;
+		padding: 1px;
+		margin: 0;
+		&.left {
+			float: left;
+			margin: 0 24px 14px 0;
+		}
+		&.right {
+			float: right;
+			margin: 0 0 14px 24px;
+		}
+	}
+	// treatments page
+	h2.treatment-product-section-label {
+		font-family: @body-font;
+		font-size: 23px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		color: @grey-dk;
+		border-bottom: 1px solid darken(@brand-lt, 6%);
+		position: relative;
+		margin: 0 0 10px 0;
+		padding: 50px 0 0 0; // allowing for fixed header and jumping to ID on treatments pages
+		&:last-child { margin-bottom: 50px; }
+		a {
+			color: @brand;
+			&:hover {
+				text-decoration: underline;
+				color: @brand;
+			}
+		}
+	}
+	.thumb-list-item {
+		.clearfix;
+		padding: 4px 0 10px 0;
+		.img-body {
+			float: left;
+			width: 180px;
+			margin: 0 32px 0 0;
+		}
+		.thumb-container {
+			overflow: hidden;
+			width: 240px;
+			img {
+				display: block;
+				max-width: 160px;
+				margin: 0 auto;
+				padding: 58px 0 62px;
+			}
+		}
+		h3 {
+			color: @brand-dk;
+			margin: 8px 0 6px 0;
+			span {
+				font-size: @normal;
+				line-height: 20px;
+				font-weight: normal;
+				color: @brand;
+				display: inline-block;
+				margin-left: 8px;
+			}
+			a {
+				color: @grey-dk;
+				&:hover {
+					color: @brand;
+				}
+			}
+		}
+	}
+}
+
+/* ============================ */
+
+// patterns
+// avatar – only featured on team page for now
+.avatar {
+	border: 1px solid @grey;
+	border-radius: 65px;
+	width: 129px;
+	height: 129px;
+	margin: 20px 20px 20px 0;
+	padding: 1px;
+}
+
+// modal
+.modal-backdrop.in {
+	background: #fff;
+	opacity: 0.7;
+}
+.modal {
+	padding-top: 60px;
+	margin: 0;
+	.modal-content {
+		background: #fff;
+		box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+		border: 1px solid @grey;
+		border-radius: 4px;
+		overflow: hidden;
+	}
+}
+.body.modal-open {
+	margin: 0;
+}
+.modal-header,
+.modal-body {
+	background: #fff;
+	border-top: 1px solid #fff;
+	border-radius: 2px 2px 0 0;
+	width: 80%;
+	margin: 0 auto;
+	padding: 30px 40px 12px;
+}
+.modal-header {
+	border-top: none;
+	border-bottom: none;
+	h3 {
+		color: @grey;
+		margin: 8px 0;
+	}
+	.close {
+		font-size: 40px;
+		margin: -22px -22px 0 0;
+	}
+}
+.modal-body {
+	border-top: none;
+	border-radius: 0 0 2px 2px;
+	padding: 0 40px 30px;
+}
+
+.feature-logos {
+	background-color: #fff;
+	ul {
+		text-align: center;
+		border-top: 1px dotted @grey-lt;
+		.clearfix;
+		margin-top: 40px;
+		margin-bottom: 0;
+		padding: 20px 0;
+		li {
+			display: inline-block;
+			a {
+				display: block;
+				background-size: 65% !important;
+				background-position: 50%;
+				width: 200px;
+				height: 90px;
+				opacity: 0.75;
+				&:hover { opacity: 1; }
+			}
+		}
+		.advanced-nutrition a { .2x('../img/logos/logo-advanced.png', "no-repeat"); }
+		.aestheticare a { .2x('../img/logos/logo-aestheticare.png', "no-repeat"); }
+		.caci a { .2x('../img/logos/logo-caci-small.png', "no-repeat"); }
+		.dermaroller a { .2x('../img/logos/logo-dermaroller.png', "no-repeat"); }
+		.environ a { .2x('../img/logos/logo-environ.png', "no-repeat"); }
+		.gatineau a { .2x('../img/logos/logo-gatineau.png', "no-repeat"); }
+		.heliocare a { .2x('../img/logos/logo-heliocare.png', "no-repeat"); }
+		.jan-marini a { .2x('../img/logos/logo-jan.png', "no-repeat"); }
+		.jane-iredale a { .2x('../img/logos/logo-jane-iredale.png', "no-repeat"); }
+		.juvederm a { .2x('../img/logos/logo-juvederm.png', "no-repeat"); }
+		.lynton a { .2x('../img/logos/logo-lynton.png', "no-repeat"); }
+		.medik8 a { .2x('../img/logos/logo-medik8.png', "no-repeat"); }
+		.revitalash a { .2x('../img/logos/logo-revitalash-small.png', "no-repeat"); }
+		.restylane a { .2x('../img/logos/logo-restylane.png', "no-repeat"); }
+		.sculptra a { .2x('../img/logos/logo-sculptra.png', "no-repeat"); }
+		.skin-ceuticals a { .2x('../img/logos/logo-skin-ceuticals.png', "no-repeat"); }
+	}
+}
+// home page hero
+.row-hero {
+	position: relative;
+	height: 380px;
+	overflow: hidden;
+	div {
+	  -webkit-animation: fadein 3s; /* Safari and Chrome */
+	     -moz-animation: fadein 3s; /* Firefox */
+	      -ms-animation: fadein 3s; /* Internet Explorer */
+	       -o-animation: fadein 3s; /* Opera */
+	          animation: fadein 3s;
+	}
+	.photo-left {
+		.2x('../img/hero/photo-left.jpg', "no-repeat", 390px, 315px);
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 390px;
+		height: 315px;
+	}
+	.photo-center {
+		.2x('../img/hero/photo-center.jpg', "no-repeat", 280px, 325px);
+		position: absolute;
+		bottom: 0;
+		right: 300px;
+		width: 280px;
+		height: 325px;
+	  -webkit-animation: fadein 7s; /* Safari and Chrome */
+	     -moz-animation: fadein 7s; /* Firefox */
+	      -ms-animation: fadein 7s; /* Internet Explorer */
+	       -o-animation: fadein 7s; /* Opera */
+	          animation: fadein 7s;
+	}
+	.photo-right {
+		.2x('../img/hero/photo-right.jpg', "no-repeat", 250px, 380px);
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 250px;
+		height: 380px;
+	}
+	h3 {
+		font-family: @body-font;
+		font-size: @big;
+		line-height: 24px;
+		text-align: center;
+		color: @grey-dk;
+		background: rgba(255,255,255,0.65);
+		display: inline-block;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: 0;
+		padding: 10px 0;
+	  -webkit-animation: fadein 5s; /* Safari and Chrome */
+	     -moz-animation: fadein 5s; /* Firefox */
+	      -ms-animation: fadein 5s; /* Internet Explorer */
+	       -o-animation: fadein 5s; /* Opera */
+	          animation: fadein 5s;
+	}
+	&.page-news {
+		text-align: center;
+		background: #fff;
+		.2x('../img/hero/hero-page-news.jpg', "no-repeat", 500px, 300px);
+		background-size: cover !important;
+		border-bottom: 1px solid @grey-lt;
+		height: 420px;
+		margin-bottom: 40px;
+		#mc_embed_signup {
+			max-width: 800px;
+			margin: 0 auto;
+			input {
+				font-size: @big;
+				width: 50%;
+				margin: 10px;
+				padding: 10px 12px;
+			}
+		}
+	}
+}
+// home page welcome – welcome intro
+.row-welcome {
+	border-top: 1px solid @grey-lt;
+}
+// home page cta - row of three
+.row-cta {
+	border-top: 1px dotted @grey-lt;
+	padding-top: 40px;
+}
+.placement-cta {
+	text-align: center;
+	margin-bottom: 30px;
+	img {
+		//width: 175px;
+		width: 125px;
+	}
+	h3 {
+		font-family: @body-font;
+		font-size: 19px;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: @grey-dk;
+		margin: 12px 0 6px 0;
+	}
+}
+
+// testimonial
+.testimonial {
+	text-align: center;
+	background: @highlight;
+	border-top: 1px solid @grey-lt;
+	margin: 0;
+	padding: 0 0 15px 0;
+	blockquote {
+		font-family: @headline-font;
+		font-size: @normal;
+		line-height: 21px;
+		background: none;
+		border: none;
+		margin: 16px 0 8px;
+		padding: 0;
+	}
+	cite {
+		font-family: @body-font;
+		color: @grey-dk;
+		display: inline-block;
+		margin: 0 0 0 5px;
+	}
+	a {
+		font-size: @small;
+		background-color: #fff;
+	}
+	.modal-header,
+	.modal-body {
+		text-align: left;
+		width: auto;
+	}
+}
+
+// google map
+.map {
+	width: 100%;
+	min-height: 300px;
+	background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0, 0.035);
+	border: 1px solid @grey;
+	padding: 1px;
+	margin: 6px 0;
+}
+
+
+/* ============================ */
+/* = media queries: small screen = */
+/* ============================ */
+@media (max-width: 1200px) {
+	.row-hero {
+		.photo-center {
+			display: none;
+		}
+	}
+}
+@media (max-width: 800px) {
+	.row-hero {
+		.photo-right {
+			display: none;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.navbar li {
+		text-align: left;
+		display: block;
+	}
+	.container {
+		// minor adjustment to typography
+		h2,
+		h3 {
+			font-size: 20px;
+			line-height: 26px;
+		}
+		.single-col ul.feature-list li { // testimonials and team page
+			margin-left: 0;
+			.avatar { display: none; }
+		}
+	}
+  .footer-info {
+		&.left,
+		&.right {
+			float: none;
+		}
+  }
+}
+/* ============================ */
+.fb_iframe_widget {
+	width: 100%;
+	overflow: hidden; // prevents facebook sidebar widget breaking its container
+}
+// contact form
+#contact-area {
+	max-width: 460px;
+}
+
+
+
+
+// css3 animations for header
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

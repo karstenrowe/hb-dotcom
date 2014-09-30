@@ -1,0 +1,72 @@
+body {
+	// links
+	a {
+		cursor: pointer;
+		color: @brand;
+		background: #fff;
+		transition: all .11s ease-in-out;
+		&:hover {
+			color: @brand-dk;
+			background: none;
+		}
+	}
+	// buttons
+	button:focus {
+		outline: none;
+	}
+	.btn-primary,
+	input[type="submit"] {
+		text-shadow: none;
+	  color: @brand;
+	  background-color: @brand-lt;
+	  border: 2px solid @brand;
+	  margin: 6px 10px 8px 0;
+		&:hover {
+			color: @off-white;
+			background-color: @brand;
+			border-color: @brand-dk;
+		}
+		&:active,
+		&:focus {
+			outline: none;
+			background-color: @brand-dk;
+			box-shadow: none;
+		  border-color: @brand-dk;
+		}
+		&.secondary {
+		  background-color: @grey;
+		  box-shadow: none;
+		  border-color: @grey;
+		  &:hover {
+			  cursor: default;
+				text-shadow: none;
+				background-color: @grey;
+			  box-shadow: none;
+			  border-color: @grey;
+		  }
+		}
+	}
+	// inputs
+	input,
+	textarea {
+		outline: none;
+		border: 2px solid @grey;
+		border-radius: 4px;
+		width: 100%;
+		margin: 3px 0 11px 0;
+		padding: 5px 6px;
+		&:hover {
+			border: 2px solid @brand;
+		}
+		&:focus {
+			box-shadow: 0 0px 5px lighten(@brand, 30%);
+			border: 2px solid @brand-dk;
+		}
+	}
+	textarea {
+		min-height: 140px;
+	}
+	input[type="submit"] {
+		width: auto;
+	}
+}
