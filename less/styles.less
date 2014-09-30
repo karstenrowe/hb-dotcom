@@ -4,10 +4,13 @@
 // import bootstrap
 @import "bootstrap.less";
 
+<<<<<<< HEAD
 // import individual less files
 @import "form-elements.less";
 @import "footer.less";
 @import "sidemenu.less";
+=======
+>>>>>>> 76adc8ad2d16c80f848b413825f615a0024729f6
 
 /* ============================ */
 /* = font = */
@@ -116,6 +119,7 @@ h6 {
 	margin: 18px 0 6px;
 }
 blockquote {
+<<<<<<< HEAD
 	font-family: @headline-font;
 	font-size: @big;
 	line-height: 28px;
@@ -124,6 +128,11 @@ blockquote {
 	background-color: #fff;
 	border-color: @brand;
 	margin: 20px 0;
+=======
+	font-style: italic;
+	color: @grey;
+	border-color: @grey-lt;
+>>>>>>> 76adc8ad2d16c80f848b413825f615a0024729f6
 	cite {
 		font-size: @small;
 		color: @grey-dk;
@@ -131,12 +140,15 @@ blockquote {
 		margin: 6px 0 2px;
 	}
 }
+<<<<<<< HEAD
 p {
 	&.lead {
 		font-size: @big;
 		line-height: 28px;
 	}
 }
+=======
+>>>>>>> 76adc8ad2d16c80f848b413825f615a0024729f6
 /* ============================ */
 
 
@@ -171,14 +183,20 @@ p {
 		display: inline-block;
 
 		a {
+<<<<<<< HEAD
 			font-size: @big;
 			color: @grey !important;
 			border-color: @brand;
 			padding: 15px 20px;
+=======
+			color: @grey !important;
+			padding: 10px 12px;
+>>>>>>> 76adc8ad2d16c80f848b413825f615a0024729f6
 			&:hover {
 				color: @brand !important;
 				background: @brand-lt !important;
 			}
+<<<<<<< HEAD
 			.caret {
 				border-top-color: @brand;
 				border-bottom-color: @brand;
@@ -190,6 +208,13 @@ p {
 				background: @brand-lt !important;
 				border-bottom: 1px solid @brand;
 				margin-bottom: -1px;
+=======
+		}
+		&.active {
+			a {
+				color: @brand !important;
+				background: @brand-lt !important;
+>>>>>>> 76adc8ad2d16c80f848b413825f615a0024729f6
 			}
 		}
 		> &.active {
@@ -215,7 +240,10 @@ p {
 			a { // these styles override theme colors
 				color: @brand !important;
 				background: @brand-lt;
+<<<<<<< HEAD
 				border: none;
+=======
+>>>>>>> 76adc8ad2d16c80f848b413825f615a0024729f6
 			}
 		}
 		&.divider {
@@ -223,6 +251,12 @@ p {
 		}
 	}
 }
+<<<<<<< HEAD
+=======
+.dropdown.active .dropdown-menu {
+	//display: none;
+}
+>>>>>>> 76adc8ad2d16c80f848b413825f615a0024729f6
 /* ============================ */
 
 
@@ -238,8 +272,11 @@ p {
 	min-height: 85px;
 	margin: 36px 0 40px;
 	padding: 0;
+<<<<<<< HEAD
 	position: relative;
 	z-index: 2;
+=======
+>>>>>>> 76adc8ad2d16c80f848b413825f615a0024729f6
 }
 .signature {
 	text-indent: -9999px;
@@ -260,6 +297,7 @@ p {
 /* = patterns = */
 /* ============================ */
 .container {
+<<<<<<< HEAD
 	&.main-content {
 		margin-bottom: 30px;
 	}
@@ -275,6 +313,22 @@ p {
 		overflow: hidden;
 		h2 {
 			font-size: 19px;
+=======
+	max-width: 80%;
+	padding: 0;
+	.jumbotron {
+		text-align: center;
+		// h2
+		.pull-out {
+			text-align: center;
+			border-top: 1px dotted @grey-lt;
+		}
+	}
+	.row {
+		margin: 0;
+		h2 {
+			font-size: @big;
+>>>>>>> 76adc8ad2d16c80f848b413825f615a0024729f6
 			color: @brand;
 			margin: 0 0 14px 0;
 			padding: 14px 0;
@@ -329,6 +383,7 @@ p {
 			}
 		}
 	}
+<<<<<<< HEAD
 	// treatments
 	.treatments-products {
 		.brand-logo {
@@ -375,6 +430,32 @@ p {
 				font-weight: bold;
 				line-height: 25px;
 				margin: 0 0 6px 0;
+=======
+	// .row
+	.welcome {
+		padding-top: 30px;
+	}
+	// treatments
+	.treatments {
+		.logo-treatment {
+			position: absolute;
+			right: 12px;
+			top: -10px;
+			height: auto;
+			width: 140px;
+			padding: 20px 10px;
+		}
+		.thumb-list-item {
+			width: 82%;
+			h3 {
+				font-size: @big;
+				line-height: 25px;
+				margin: 0;
+			}
+			.intro {
+				font-size: @small;
+				font-style: italic;
+>>>>>>> 76adc8ad2d16c80f848b413825f615a0024729f6
 			}
 			ul {
 				padding: 0 0 0 22px;
@@ -386,6 +467,7 @@ p {
 		}
 	}
 	// .row
+<<<<<<< HEAD
 	.single-col {
 		max-width: 800px;
 		margin: 0 auto;
@@ -434,6 +516,23 @@ p {
 					line-height: 22px;
 				}
 			}
+=======
+	.feature-imgs {
+		margin: 0;
+		// img
+		.feature {
+			margin: 20px 16px 10px 0;
+			width: 280px;
+		}
+	}
+	// links
+	a {
+		cursor: pointer;
+		color: @brand;
+		transition: all .11s ease-in-out;
+		&:hover {
+			color: @brand-dk;
+>>>>>>> 76adc8ad2d16c80f848b413825f615a0024729f6
 		}
 	}
 	// imgs
@@ -445,7 +544,11 @@ p {
 		border: 1px solid @grey;
 		border-radius: 2px;
 		padding: 1px;
+<<<<<<< HEAD
 		margin: 0;
+=======
+		margin: 4px;
+>>>>>>> 76adc8ad2d16c80f848b413825f615a0024729f6
 		&.left {
 			float: left;
 			margin: 0 24px 14px 0;
@@ -455,6 +558,7 @@ p {
 			margin: 0 0 14px 24px;
 		}
 	}
+<<<<<<< HEAD
 	// treatments page
 	h2.treatment-product-section-label {
 		font-family: @body-font;
@@ -467,6 +571,47 @@ p {
 		margin: 0 0 10px 0;
 		padding: 50px 0 0 0; // allowing for fixed header and jumping to ID on treatments pages
 		&:last-child { margin-bottom: 50px; }
+=======
+	// news
+	.jump-to-label {
+		font-family: @body-font;
+		font-size: 15px;
+		font-weight: bold;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		display: inline-block;
+		margin: 0 8px 12px 0;
+	}
+	.jump-to.news {
+		top: -2px;
+	}
+	// alerts
+	.alert {
+		margin: 20px 0;
+		a {
+			color: #d9534f;
+			&:hover {
+				color: #d2322d;
+			}
+		}
+	}
+	.alert-dismissable .close {
+		top: 1px;
+	}
+	// treatments page
+	h2.treatment-section-label {
+		font-family: @body-font;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		color: @grey;
+		border-bottom: 1px solid darken(@brand-lt, 6%);
+		position: relative;
+		margin: 70px 0 10px 0;
+		padding: 0;
+		&:first-child {
+			margin-top: 20px;
+		}
+>>>>>>> 76adc8ad2d16c80f848b413825f615a0024729f6
 		a {
 			color: @brand;
 			&:hover {
@@ -474,10 +619,21 @@ p {
 				color: @brand;
 			}
 		}
+<<<<<<< HEAD
 	}
 	.thumb-list-item {
 		.clearfix;
 		padding: 4px 0 10px 0;
+=======
+		&.secondary {
+			margin: 40px 0 10px;
+		}
+	}
+	.thumb-list-item {
+		border-bottom: 1px dotted @grey-lt;
+		.clearfix;
+		padding: 22px 0;
+>>>>>>> 76adc8ad2d16c80f848b413825f615a0024729f6
 		.img-body {
 			float: left;
 			width: 180px;
@@ -494,6 +650,7 @@ p {
 			}
 		}
 		h3 {
+<<<<<<< HEAD
 			color: @brand-dk;
 			margin: 8px 0 6px 0;
 			span {
@@ -503,6 +660,16 @@ p {
 				color: @brand;
 				display: inline-block;
 				margin-left: 8px;
+=======
+			color: @grey-dk;
+			margin: 0 0 6px 0;
+			span {
+				font-size: @small;
+				line-height: 20px;
+				color: @brand;
+				display: block;
+				margin: 0 0 10px 0;
+>>>>>>> 76adc8ad2d16c80f848b413825f615a0024729f6
 			}
 			a {
 				color: @grey-dk;
@@ -512,6 +679,7 @@ p {
 			}
 		}
 	}
+<<<<<<< HEAD
 }
 
 /* ============================ */
@@ -542,13 +710,100 @@ p {
 		border-radius: 4px;
 		overflow: hidden;
 	}
+=======
+	// buttons
+	button:focus {
+		outline: none;
+	}
+	.btn-primary,
+	input[type="submit"] {
+		text-shadow: none;
+	  color: @brand;
+	  background-color: @brand-lt;
+	  border: 2px solid @brand;
+	  margin: 6px 6px 8px 0;
+		&:hover {
+			color: @off-white;
+			background-color: @brand;
+			border-color: @brand-dk;
+		}
+		&:active,
+		&:focus {
+			outline: none;
+			background-color: @brand-dk;
+			box-shadow: none;
+		  border-color: @brand-dk;
+		}
+		&.secondary {
+		  background-color: @grey;
+		  box-shadow: none;
+		  border-color: @grey;
+		  &:hover {
+			  cursor: default;
+				text-shadow: none;
+				background-color: @grey;
+			  box-shadow: none;
+			  border-color: @grey;
+		  }
+		}
+	}
+	input[type="submit"] {
+/*
+		float: right;
+		margin: 8px 0 8px 6px;
+*/
+	}
+	// inputs
+	input,
+	textarea {
+		outline: none;
+		border: 2px solid @grey;
+		border-radius: 3px;
+		width: 100%;
+		margin: 3px 0 11px 0;
+		padding: 5px 6px;
+		&:hover {
+			border: 2px solid @brand;
+		}
+		&:focus {
+			box-shadow: 0 0px 5px lighten(@brand, 30%);
+			border: 2px solid @brand-dk;
+		}
+	}
+	textarea {
+		min-height: 140px;
+	}
+	input[type="submit"] {
+		width: auto;
+	}
+}
+/* ============================ */
+
+// patterns
+// reveal more info on treatments page
+#accordion {
+	margin: 0 0 10px 0;
+	.panel-collapse {
+		margin: 12px 0;
+	}
+}
+
+// modal
+.modal {
+	padding-top: 60px;
+	margin: 0;
+>>>>>>> 76adc8ad2d16c80f848b413825f615a0024729f6
 }
 .body.modal-open {
 	margin: 0;
 }
 .modal-header,
 .modal-body {
+<<<<<<< HEAD
 	background: #fff;
+=======
+	background: @off-white;
+>>>>>>> 76adc8ad2d16c80f848b413825f615a0024729f6
 	border-top: 1px solid #fff;
 	border-radius: 2px 2px 0 0;
 	width: 80%;
@@ -573,6 +828,7 @@ p {
 	padding: 0 40px 30px;
 }
 
+<<<<<<< HEAD
 .feature-logos {
 	background-color: #fff;
 	ul {
@@ -719,12 +975,156 @@ p {
 		margin: 12px 0 6px 0;
 	}
 }
+=======
+
+
+.footer {
+	border-top: 1px solid @grey-lt;
+	background: #fff;
+	color: lighten(@grey, 20%);
+	margin: 0;
+	padding: 30px 0 34px;
+	.left {
+		font-size: @small;
+		float: left;
+	}
+	.right {
+		font-size: 19px;
+		float: right;
+		padding-top: 12px;
+		a {
+			margin: 0 5px;
+		}
+	}
+	p {
+		color: @brand;
+	}
+	.contact-detail {
+		margin: 0 5px 0 0;
+	}
+}
+
+.feature-logos {
+	ul {
+		text-align: center;
+		border-top: 1px dotted @grey-lt;
+		border-bottom: 1px dotted @grey-lt;
+		.clearfix;
+		margin: 20px 0;
+		padding: 14px;
+		li {
+			display: inline-block;
+			background-position: 50%;
+			width: 200px;
+			height: 90px;
+		}
+		.caci {
+			.2x('../img/logos/logo-caci-small.png', "no-repeat", 105px, 28px);
+			background-position: 50% 60%;
+		}
+		.dermaroller {
+			.2x('../img/logos/logo-dermaroller.png', "no-repeat", 116px, 46px);
+		}
+		.heliocare {
+			.2x('../img/logos/logo-heliocare.png', "no-repeat", 135px, 30px);
+		}
+		.jane-iredale {
+			.2x('../img/logos/logo-jane-iredale.png', "no-repeat", 134px, 41px);
+		}
+		.juvederm {
+			.2x('../img/logos/logo-juvederm.png', "no-repeat", 154px, 37px);
+		}
+		.lynton {
+			.2x('../img/logos/logo-lynton.png', "no-repeat", 96px, 52px);
+		}
+		.revitalash {
+			.2x('../img/logos/logo-revitalash-small.png', "no-repeat", 95px, 30px);
+		}
+		.restylane {
+			.2x('../img/logos/logo-restylane.png', "no-repeat", 127px, 52px);
+		}
+		.sculptra {
+			.2x('../img/logos/logo-sculptra.png', "no-repeat", 162px, 35px);
+		}
+		.skin-ceuticals {
+			.2x('../img/logos/logo-skin-ceuticals.png', "no-repeat", 155px, 20px);
+		}
+	}
+}
+
+// home page slideshow
+.carousel {
+	margin: 32px 0;
+	border-top: 1px solid @grey-lt;
+	border-bottom: 1px solid @grey-lt;
+	padding: 1px;
+	.carousel-inner {
+		background: #fff;
+		overflow: visible;
+	}
+	img {
+		width: 100%;
+		height: auto;
+		display: block;
+		margin: 0 auto;
+	}
+	a {
+		color: @brand;
+		transition: all .11s ease-in-out;
+		&:hover {
+			color: @brand-dk;
+		}
+	}
+	.carousel-control {
+		font-size: 100px;
+		text-shadow: 0 1px 1px rgba(255,255,255, 0.5);
+		top: 170px;
+	}
+	.carousel-indicators {
+		text-align: center;
+		bottom: 12px;
+		li {
+			background: @brand;
+			border: 2px solid @brand-dk;
+			border-radius: 20px;
+			display: inline-block;
+			float: left;
+			width: 40px;
+			height: 40px;
+			opacity: 0.2;
+			margin: 0 20px 0 0;
+			&.active,
+			&:hover {
+				opacity: 0.6;
+			}
+		}
+	}
+	.carousel-caption {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: -32px;
+		margin: 0;
+		padding: 0;
+		h3 {
+			font-size: 13px;
+			line-height: 20px;
+			font-style: italic;
+			text-shadow: 0 1px 1px rgba(255,255,255, 0.3);
+			color: @grey;
+			margin: 4px 0 0 0;
+			padding: 0;
+		}
+	}
+}
+>>>>>>> 76adc8ad2d16c80f848b413825f615a0024729f6
 
 // testimonial
 .testimonial {
 	text-align: center;
 	background: @highlight;
 	border-top: 1px solid @grey-lt;
+<<<<<<< HEAD
 	margin: 0;
 	padding: 0 0 15px 0;
 	blockquote {
@@ -745,6 +1145,23 @@ p {
 	a {
 		font-size: @small;
 		background-color: #fff;
+=======
+	margin: 20px 0 0 0;
+	padding: 0 0 15px 0;
+	blockquote {
+		font-family: @headline-font;
+		border: none;
+		margin: 0;
+	}
+	cite {
+		font-family: @body-font;
+		color: @brand;
+		display: inline-block;
+		background: #fff;
+	}
+	a {
+		font-size: @small;
+>>>>>>> 76adc8ad2d16c80f848b413825f615a0024729f6
 	}
 	.modal-header,
 	.modal-body {
@@ -768,6 +1185,7 @@ p {
 /* ============================ */
 /* = media queries: small screen = */
 /* ============================ */
+<<<<<<< HEAD
 @media (max-width: 1200px) {
 	.row-hero {
 		.photo-center {
@@ -782,21 +1200,41 @@ p {
 		}
 	}
 }
+=======
+>>>>>>> 76adc8ad2d16c80f848b413825f615a0024729f6
 @media (max-width: 768px) {
 	.navbar li {
 		text-align: left;
 		display: block;
 	}
 	.container {
+<<<<<<< HEAD
+=======
+		max-width: 88%;
+>>>>>>> 76adc8ad2d16c80f848b413825f615a0024729f6
 		// minor adjustment to typography
 		h2,
 		h3 {
 			font-size: 20px;
 			line-height: 26px;
 		}
+<<<<<<< HEAD
 		.single-col ul.feature-list li { // testimonials and team page
 			margin-left: 0;
 			.avatar { display: none; }
+=======
+		.jumbotron {
+			padding: 20px 0;
+		}
+		.carousel { // hide slideshow
+			display: none;
+		}
+		.row .col.left,
+		.row .col.right { // create one column layout
+			float: none;
+			width: auto;
+			padding: 0;
+>>>>>>> 76adc8ad2d16c80f848b413825f615a0024729f6
 		}
 	}
   .footer-info {
@@ -807,10 +1245,14 @@ p {
   }
 }
 /* ============================ */
+<<<<<<< HEAD
 .fb_iframe_widget {
 	width: 100%;
 	overflow: hidden; // prevents facebook sidebar widget breaking its container
 }
+=======
+
+>>>>>>> 76adc8ad2d16c80f848b413825f615a0024729f6
 // contact form
 #contact-area {
 	max-width: 460px;

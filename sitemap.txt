@@ -1,4 +1,5 @@
 http://www.harrogatehealthandbeauty.com/
+<<<<<<< HEAD
 http://www.harrogatehealthandbeauty.com/about/our-approach/
 http://www.harrogatehealthandbeauty.com/about/team/
 http://www.harrogatehealthandbeauty.com/about/testimonials/
@@ -10,3 +11,11 @@ http://www.harrogatehealthandbeauty.com/treatments/men/
 http://www.harrogatehealthandbeauty.com/products/
 http://www.harrogatehealthandbeauty.com/news/
 http://www.harrogatehealthandbeauty.com/contact-us/
+=======
+http://www.harrogatehealthandbeauty.com/page/about/
+http://www.harrogatehealthandbeauty.com/page/advanced-treatments/
+http://www.harrogatehealthandbeauty.com/page/beauty-treatments/
+http://www.harrogatehealthandbeauty.com/page/products/
+http://www.harrogatehealthandbeauty.com/page/news/
+http://www.harrogatehealthandbeauty.com/page/contact-us/
+>>>>>>> 76adc8ad2d16c80f848b413825f615a0024729f6
