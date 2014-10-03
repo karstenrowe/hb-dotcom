@@ -16,8 +16,8 @@
 				<p>More men today are concerned with their appearance as well as the ageing process. We want to help shave the years off without detracting from their masculinity.</p>
 				<p>Harrogate Health & Beauty Cosmetic Clinic offers a discreet and private environment which our male clients feel totally comfortable in.</p>
 				<p>The treatments are similar to those offered to our female clients, ie skin improvement, eyebrow shape, muscle relaxing treatments for frown lines and dermal fillers for nose to mouth lines.</p>
-				<p>All treatments require a consultation which offers the opportunity to discuss concerns and design a treatment plan for the individual.</p>
-				<p>There is no obligation to go ahead with treatment should you not wish to.</p>
+				<p>All treatments require a consultation which offers the opportunity to discuss concerns and design a treatment plan for the individual. There is no obligation to go ahead with treatment should you not wish to.</p>
+				<p>The packages listed below should be used as a guide – a tailored package is crafted for each individual.</p>
       </div>
 
       <div class="row single-col treatments-products">
