@@ -33,12 +33,14 @@
 	      	</a>
 					<!-- Modal -->
 					<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					  <div class="modal-header">
-					    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					    <h3 id="myModalLabel">H&B Newsletter – September Edition</h3>
-					  </div>
-					  <div class="modal-body">
-				      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 08 – September Edition.pdf" target="_blank">View on the web</a>			  <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 08 – September Edition.pdf" download>Download to print</a>
+						<div class="modal-content">
+						  <div class="modal-header">
+						    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						    <h3 id="myModalLabel">H&B Newsletter – September Edition</h3>
+						  </div>
+						  <div class="modal-body">
+					      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 08 – September Edition.pdf" target="_blank">View on the web</a>			  <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 08 – September Edition.pdf" download>Download to print</a>
+						  </div>
 					  </div>
 					</div>
 				</div>
@@ -51,14 +53,16 @@
 	      	</a>
 					<!-- Modal -->
 					<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					  <div class="modal-header">
-					    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					    <h3 id="myModalLabel">H&B Newsletter – August Edition</h3>
-					  </div>
-					  <div class="modal-body">
-				      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 07 – August Edition.pdf" target="_blank">View on the web</a>
-				      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 07 – August Edition.pdf" download>Download to print</a>
-					  </div>
+						<div class="modal-content">
+						  <div class="modal-header">
+						    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						    <h3 id="myModalLabel">H&B Newsletter – August Edition</h3>
+						  </div>
+						  <div class="modal-body">
+					      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 07 – August Edition.pdf" target="_blank">View on the web</a>
+					      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 07 – August Edition.pdf" download>Download to print</a>
+						  </div>
+						</div>
 					</div>
 				</div>
 
@@ -70,14 +74,16 @@
 	      	</a>
 					<!-- Modal -->
 					<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					  <div class="modal-header">
-					    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					    <h3 id="myModalLabel">H&B Newsletter – July Edition</h3>
-					  </div>
-					  <div class="modal-body">
-				      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 06 – July Edition.pdf" target="_blank">View on the web</a>
-				      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 06 – July Edition.pdf" download>Download to print</a>
-					  </div>
+						<div class="modal-content">
+						  <div class="modal-header">
+						    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						    <h3 id="myModalLabel">H&B Newsletter – July Edition</h3>
+						  </div>
+						  <div class="modal-body">
+					      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 06 – July Edition.pdf" target="_blank">View on the web</a>
+					      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 06 – July Edition.pdf" download>Download to print</a>
+						  </div>
+						</div>
 					</div>
 				</div>
 
@@ -89,14 +95,16 @@
 	      	</a>
 					<!-- Modal -->
 					<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					  <div class="modal-header">
-					    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					    <h3 id="myModalLabel">H&B Newsletter – June Edition</h3>
-					  </div>
-					  <div class="modal-body">
-				      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 05 – June Edition.pdf" target="_blank">View on the web</a>
-				      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 05 – June Edition.pdf" download>Download to print</a>
-					  </div>
+						<div class="modal-content">
+						  <div class="modal-header">
+						    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						    <h3 id="myModalLabel">H&B Newsletter – June Edition</h3>
+						  </div>
+						  <div class="modal-body">
+					      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 05 – June Edition.pdf" target="_blank">View on the web</a>
+					      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 05 – June Edition.pdf" download>Download to print</a>
+						  </div>
+						</div>
 					</div>
 				</div>
 
@@ -108,14 +116,16 @@
 	      	</a>
 					<!-- Modal -->
 					<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					  <div class="modal-header">
-					    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					    <h3 id="myModalLabel">H&B Newsletter – May Edition</h3>
-					  </div>
-					  <div class="modal-body">
-				      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 04 – May Edition.pdf" target="_blank">View on the web</a>
-				      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 04 – May Edition.pdf" download>Download to print</a>
-					  </div>
+						<div class="modal-content">
+						  <div class="modal-header">
+						    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						    <h3 id="myModalLabel">H&B Newsletter – May Edition</h3>
+						  </div>
+						  <div class="modal-body">
+					      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 04 – May Edition.pdf" target="_blank">View on the web</a>
+					      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 04 – May Edition.pdf" download>Download to print</a>
+						  </div>
+						</div>
 					</div>
 				</div>
 
@@ -127,14 +137,16 @@
 	      	</a>
 					<!-- Modal -->
 					<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					  <div class="modal-header">
-					    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					    <h3 id="myModalLabel">H&B Newsletter – April Edition</h3>
-					  </div>
-					  <div class="modal-body">
-				      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 03 – April Edition.pdf" target="_blank">View on the web</a>
-				      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 03 – April Edition.pdf" download>Download to print</a>
-					  </div>
+						<div class="modal-content">
+						  <div class="modal-header">
+						    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						    <h3 id="myModalLabel">H&B Newsletter – April Edition</h3>
+						  </div>
+						  <div class="modal-body">
+					      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 03 – April Edition.pdf" target="_blank">View on the web</a>
+					      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 03 – April Edition.pdf" download>Download to print</a>
+						  </div>
+						</div>
 					</div>
 				</div>
 
@@ -147,14 +159,16 @@
 	      	</a>
 					<!-- Modal -->
 					<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					  <div class="modal-header">
-					    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					    <h3 id="myModalLabel">H&B Newsletter – March Edition</h3>
-					  </div>
-					  <div class="modal-body">
-				      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 02 – March Edition.pdf" target="_blank">View on the web</a>
-				      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 02 – March Edition.pdf" download>Download to print</a>
-					  </div>
+						<div class="modal-content">
+						  <div class="modal-header">
+						    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						    <h3 id="myModalLabel">H&B Newsletter – March Edition</h3>
+						  </div>
+						  <div class="modal-body">
+					      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 02 – March Edition.pdf" target="_blank">View on the web</a>
+					      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 02 – March Edition.pdf" download>Download to print</a>
+						  </div>
+						</div>
 					</div>
 				</div>
 
@@ -167,14 +181,16 @@
 	      	</a>
 					<!-- Modal -->
 					<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					  <div class="modal-header">
-					    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					    <h3 id="myModalLabel">H&B Newsletter – February Edition</h3>
-					  </div>
-					  <div class="modal-body">
-				      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 01 – February Edition.pdf" target="_blank">View on the web</a>
-				      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 01 – February Edition.pdf" download>Download to print</a>
-					  </div>
+						<div class="modal-content">
+						  <div class="modal-header">
+						    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						    <h3 id="myModalLabel">H&B Newsletter – February Edition</h3>
+						  </div>
+						  <div class="modal-body">
+					      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 01 – February Edition.pdf" target="_blank">View on the web</a>
+					      <a class="btn btn-lg btn-primary" href="../../download/H&B Newsletter 01 – February Edition.pdf" download>Download to print</a>
+						  </div>
+						</div>
 					</div>
 				</div>
       </div>
