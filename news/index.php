@@ -26,6 +26,14 @@
       <div class="row single-col">
 
 				<div class="thumb-list-item">
+					<h3>H&B Newsletter – October Edition<span>Written on Thursday 2nd October, 2014</span></h3>
+					<p>Men's treatments – We recently launched a new dedicated page – treatments hand picked and tailored for men.</p>
+		      <a class="btn btn-lg btn-primary" target="_blank" href="http://eepurl.com/4A2u9" title="Read the H&B October newsletter.">
+		      	View newsletter
+	      	</a>
+				</div>
+
+				<div class="thumb-list-item">
 					<h3>H&B Newsletter – September Edition<span>Written on Tuesday 2nd September, 2014</span></h3>
 					<p>Monthly recommendation – Jan Marini 5-Step Skin Care Management System.</p>
 		      <a class="btn btn-lg btn-primary" href="#myModal" role="button" data-toggle="modal">
