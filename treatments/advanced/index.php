@@ -34,7 +34,7 @@
 						<li><a href="#skin-boosters">Skin boosters – Restylane Vital</a></li>
 						<li><a href="#skin-peels">Skin peels</a></li>
 						<li><a href="#skin-tightening">Skin tightening treatments</a></li>
-						<li><a href="#wart-removal">Wart & mole removal</a></li>
+						<li><a href="#advanced-cosmetics">Wart & mole removal</a></li>
 					</ul>
 				</div>
 			</div>
