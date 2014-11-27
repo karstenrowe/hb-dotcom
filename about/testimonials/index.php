@@ -15,6 +15,18 @@
 	    	<h2 class="pull-out">Client testimonials<span>What are customers say.</span></h2>
 				<ul class="feature-list">
 					<li>
+		    		<img class="avatar" title="Caroline profile picture." src="../../img/photo/avatar-empty.png" >
+		    		<h3>Louise</h3>
+	    			<span class="meta-description">
+		    			Related links:
+	    				<a href="/treatments/advanced/#advanced-cosmetics" title="Learn more about advanced cosmetic treatments.">Advanced cosmetics</a>
+	    				<a href="/treatments/advanced/#advanced-cosmetics" title="Learn more about advanced cosmetic treatments.">Wart removal</a>
+	    			</span>
+	    			<blockquote>
+			    		<p>Bente is friendly, knowledgeable and helpful. The wart has nearly disappeared, she also reassured me that I am able to go back at no extra cost to totally remove it.</p>
+	    			</blockquote>
+	    		</li>
+					<li>
 		    		<img class="avatar" title="Caroline profile picture." src="../../img/photo/avatar-caroline.png" >
 		    		<h3>Caroline J Bourne</h3>
 	    			<span class="meta-description">
@@ -28,7 +40,7 @@
 	    			</blockquote>
 	    		</li>
 		    	<li>
-		    		<img class="avatar" title="Bente profile picture." src="../../img/photo/avatar-empty.png" >
+		    		<img class="avatar" title="Leanna profile picture." src="../../img/photo/avatar-empty.png" >
 		    		<h3>Leanna Wroe</h3>
 	    			<span class="meta-description">
 		    			Related links:
@@ -71,6 +83,18 @@
 			    		<p>I have always been happy to recommend her services to friends. She even came along to Oakdale Golf Club to give a demonstration on one of our ladies evenings.</p>
 	    			</blockquote>
 	    		</li>
+					<li>
+		    		<img class="avatar" title="Shirley profile picture." src="../../img/photo/avatar-empty.png" >
+		    		<h3>Shirley</h3>
+	    			<span class="meta-description">
+		    			Related links:
+	    				<a href="/treatments/advanced/#advanced-cosmetics" title="Learn more about advanced cosmetic treatments.">Mole removal</a>
+	    			</span>
+	    			<blockquote>
+			    		<p>I contacted the clinic regarding mole removal – Bente was very informative and helpful over the phone so I booked my consultation and first treatment there and then. The clinic is ideally located, being close to the town centre, yet easy for parking.</p>
+	    			</blockquote>
+	    		</li>
+
   			</ul>
 	    </div>
 
