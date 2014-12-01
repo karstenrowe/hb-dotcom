@@ -25,15 +25,13 @@
 
       <div class="row single-col">
 
-<!--
 				<div class="thumb-list-item">
-					<h3>H&B Newsletter – December Edition<span>Written on Tuesday 2nd November, 2014</span></h3>
+					<h3>H&B Newsletter – December Edition<span>Written on Monday 1st December, 2014</span></h3>
 					<p>Winter warmers – handpicked Christmas treatment offers.</p>
-		      <a class="btn btn-lg btn-primary" target="_blank" href="" title="Read the H&B December newsletter.">
+		      <a class="btn btn-lg btn-primary" target="_blank" href="http://eepurl.com/84FHf" title="Read the H&B December newsletter.">
 		      	View newsletter
 	      	</a>
 				</div>
--->
 
 				<div class="thumb-list-item">
 					<h3>H&B Newsletter – November Edition<span>Written on Wednesday 12th November, 2014</span></h3>
