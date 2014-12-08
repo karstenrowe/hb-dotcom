@@ -16,6 +16,20 @@
 				<ul class="feature-list">
 					<li>
 		    		<img class="avatar" title="Caroline profile picture." src="../../img/photo/avatar-empty.png" >
+		    		<h3>Becky Gamble</h3>
+	    			<span class="meta-description">
+		    			Related links:
+	    				<a href="/products/#environ" title="Learn more about skin care products.">Environ</a>
+	    				<a href="/treatments/advanced/#dermaroller" title="Learn more about advanced cosmetic treatments.">Dermaroller</a>
+	    				<a href="/treatments/advanced/#skin-peels" title="Learn more about advanced cosmetic treatments.">Skin peels</a>
+	    			</span>
+	    			<blockquote>
+			    		<p>When I first visited Harrogate Health and Beauty after a recommendation from a client I was sceptical that they would be able to help with my acne and scarring. After years of being under a dermatologist and trying several prescribed treatments I felt that this was a last resort. I have suffered with acne for the last 10 years and have had eczema throughout my life and have found it hard to get the right balance of products. After recommendations from Alex to change some products I was using I decided to try the Environ cleanser, wash and toner. After using the products for about 6 months I also decided to have a course of the Environ Cool Peels. My skin is a lot clearer and smoother and I am only half way through the skin peels.</p>
+			    		<p>My acne has nearly cleared up with just minor break outs, which is a refreshing change from what I was used to. Alex has always let me think about the suggested treatments before deciding whether to go ahead and I never felt pressurised to go ahead with any of her recommendations. She is always professional, friendly and helpful and I would recommend her to anyone with problematic skin.</p>
+	    			</blockquote>
+	    		</li>
+					<li>
+		    		<img class="avatar" title="Caroline profile picture." src="../../img/photo/avatar-empty.png" >
 		    		<h3>Louise</h3>
 	    			<span class="meta-description">
 		    			Related links:
