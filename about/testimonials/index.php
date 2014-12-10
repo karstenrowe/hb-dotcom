@@ -66,6 +66,21 @@
 			    		<p>My skin has never been better.</p>
 	    			</blockquote>
 	    		</li>
+					<li>
+		    		<img class="avatar" title="Maggie profile picture." src="../../img/photo/avatar-empty.png" >
+		    		<h3>Maggie Gamble</h3>
+	    			<span class="meta-description">
+		    			Related links:
+	    				<a href="/products/#environ" title="Learn more about skin care products.">Environ</a>
+	    				<a href="/treatments/beauty/#caci-ultimate" title="Learn more about CACI ultimate beauty treatments for acne and scarring.">CACI Ultimate</a>
+	    			</span>
+	    			<blockquote>
+			    		<p>I have been going to Harrogate Health and Beauty for over 8 years after a recommendation from a close friend.</p>
+			    		<p>I suffered for years in my twenties with severe acne and have substantial scarring. After recommendations from Bente and Alex I started using the Environ products which I love and I have seen some great results especially when referring to the before and after photos. My wrinkles are less noticeable and the scarring from my acne has become less severe. I have also had CACI treatments regularly over the last 8 years and have found them very beneficial keeping the aging at bay.
+				    	<p>I would highly recommend Alex as she is helpful, professional and never pushy. Harrogate Health and Beauty is a place where you can feel at ease and enjoy your treatment.</p>
+	    			</blockquote>
+	    		</li>
+					<li>
 		    	<li>
 		    		<img class="avatar" title="Janet profile picture." src="../../img/photo/avatar-empty.png" >
 		    		<h3>Janet Leeds</h3>
