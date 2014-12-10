@@ -80,7 +80,6 @@
 				    	<p>I would highly recommend Alex as she is helpful, professional and never pushy. Harrogate Health and Beauty is a place where you can feel at ease and enjoy your treatment.</p>
 	    			</blockquote>
 	    		</li>
-					<li>
 		    	<li>
 		    		<img class="avatar" title="Janet profile picture." src="../../img/photo/avatar-empty.png" >
 		    		<h3>Janet Leeds</h3>
