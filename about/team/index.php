@@ -30,7 +30,13 @@
 		    		<p class="lead">BTEC national diploma in beauty therapy sciences. A specialist in CACI non surgical face lifts, advanced skincare and beauty treatments. Enjoys walking. Plays netball.</p>
 		    	</li>
 		    	<li>
-		    		<img class="avatar" title="Alex Jones profile picture." src="../../img/photo/avatar-karsten.png" >
+		    		<img class="avatar" title="Alex Jones profile picture." src="../../img/photo/avatar-claire.jpg" >
+		    		<h3>Claire, Personal assistant
+		    		</h3>
+		    		<p class="lead">Enjoys arty films and running.</p>
+		    	</li>
+		    	<li>
+		    		<img class="avatar" title="Alex Jones profile picture." src="../../img/photo/avatar-karsten.jpg" >
 		    		<h3>Karsten Rowe, Design lead
 		    			<span class="twitter-handle">
 			    			<a href="http://twitter.com/karstenrowe" target="_blank"><i class="fa fa-twitter fa-lg"></i>@karstenrowe</a>
