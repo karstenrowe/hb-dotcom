@@ -35,8 +35,8 @@
 	    <div class="container main-content">
 		    <div class="col-sm-4 placement-cta">
 		    	<img src="img/icon/icon-recommended.jpg" alt="Recommended products and treatments il ." />
-			    <h3>Recommended</h3>
-			    <p><a href="/special/christmas/" alt="Learn more about skin care gifts for Christmas.">Perfect skin care gifts for Christmas</a>. Each product comes beautifully wrapped.</p>
+			    <h3>Client testimonials</h3>
+			    <p>We pride ourselves on giving our customers the best experience possible. Here is what some of our clients have to say. <a href="/about/testimonials/" alt="Read client testimonials and recommendations.">Read client testimonials</a>.</p>
 		    </div>
 		    <div class="col-sm-4 placement-cta">
 		    	<img src="img/icon/icon-for-men.jpg" alt="Products and treatments especially for Men illustration." />
@@ -55,10 +55,12 @@
 
 		<?php include '_includes/feature-logos.php';?>
 
-		<div class="testimonial">
+<div class="testimonial">
 			<div class="container">
 
-				<blockquote>I first visited Harrogate Health & Beauty in 1999 – I needed urgent, professional help with my poor quality skin ... <cite>Janet Leeds</cite></blockquote>
+				<blockquote>" Individually crafted treatments and innovative new products tailored to my personal requirements ... "
+					<cite>Caroline J Bourne</cite>
+				</blockquote>
 
 				<!-- Button trigger modal -->
 				<a href="#" data-toggle="modal" data-target="#myModal">
@@ -71,17 +73,18 @@
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				        <h4 class="modal-title" id="myModalLabel">Janet Leeds testimonial</h4>
+				        <h4 class="modal-title" id="myModalLabel">Caroline J Bourne testimonial</h4>
 				      </div>
 				      <div class="modal-body">
-				        <p>When I first visited Harrogate Health & Beauty in 1999 (15 years ago?) – I needed urgent, professional help with my poor quality skin.</p>
-				        <p>I've never looked back. Bente is a total professional in her field – proficient, dedicated, discreet, tailoring each treatment to the individual.</p>
-				        <p>Constantly striving and learning so she can offer cutting edge and innovative treatments.</p>
-				        <p>The result – fabulous skin. I truly believe that my skin looks better today than all those years ago when I was lucky enough to meet Bente.</p>
-				        <p>I receive compliments on how well I look. Exactly the result I was looking for – naturally glowing, healthy skin with minimal make up.</p>
+				      	<em>
+					        <p>Individually crafted treatments and innovative new products tailored to my personal requirements.</p>
+					        <p>I would recommend Harrogate Health & Beauty to anyone who is looking for a professional, friendly and safe prognosis if their problem, with a matching programme of treatments to achieve outstanding results.</p>
+				        </em>
 				        <p>Related links:</p>
 				        <ul class="related-links">
-					        <li><a href="/treatments/advanced/" title="Learn more about advanced cosmetic treatments.">Wrinkle reduction</a></li>
+					        <li><a href="/treatments/beauty/#caci-ultimate" title="Learn more about CACI beauty treatments.">CACI treatments</a></li>
+					        <li><a href="/products/#environ" title="Learn more about Environ skincare products.">Environ products</a></li>
+					        <li><a href="/products/#skin-ceuticals" title="Learn more about Skin Ceuticals products">Skin Ceuticals products</a></li>
 					        <li><a href="/about/testimonials/" title="Read more client testimonials.">Read more client testimonials</a></li>
 				        </ul>
 				      </div>

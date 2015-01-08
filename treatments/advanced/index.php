@@ -14,16 +14,17 @@
 			<div class="col-sm-3">
 				<div class="sidemenu">
 					<ul>
+						<li><a href="#lipo">3D Lipo</a></li>
 						<li><a href="#advanced-cosmetics">Advanced cosmetic procedures</a></li>
 						<li><a href="#dermal-fillers">Dermal fillers</a></li>
 						<li><a href="#dermaroller">Dermaroller & Edermastamp</a></li>
 						<li><a href="#face-lifts">Face & Y lifts</a></li>
 						<li><a href="#hand-chest">Hands & chest</a></li>
 						<li><a href="#hyperhydrosis">Hyperhydrosis</a></li>
-						<li><a href="#lip-enhancement">Lip enhancements & rejuvenation</a></li>
 						<li><a href="#ipl-hair">IPL – laser hair removal</a></li>
 						<li><a href="#ipl-photo">IPL – photo rejuvenation</a></li>
 						<li><a href="#ipl-vein">IPL – thread vein and pigment removal</a></li>
+						<li><a href="#lip-enhancement">Lip enhancements & rejuvenation</a></li>
 						<li><a href="#mesolift">Mesolift & Mesoglow</a></li>
 						<li><a href="#mesotherapy-hair">Mesotherapy for hair loss</a></li>
 						<li><a href="#microdermabrasion">Microdermabrasion with light therapy</a></li>
@@ -46,6 +47,11 @@
 					<p>Treatments are ordered alphabetically. If you have any questions, please <a href="/contact-us/">contact us</a>.</p>	      </div>
 
 	      <div class="row treatments-products">
+
+				 	<h2 id="lipo" class="treatment-product-section-label">3D Lipo</h2>
+					<div class="thumb-list-item">
+						<p>3D Lipo is a revolutionary fat reduction and body sculpting treatment that is completely non-surgical. A powerful three dimensional alternative to liposuction – an advanced combination of technologies designed to target fat removal, cellulite and skin tightening.</p>
+					</div>
 
 				 	<h2 id="advanced-cosmetics" class="treatment-product-section-label">Advanced Cosmetic Procedures</h2>
 					<div class="thumb-list-item">
@@ -98,11 +104,6 @@
 						<p>This treatment really can change people’s lives.</p>
 					</div>
 
-				 	<h2 id="#lip-enhancement" class="treatment-product-section-label">Lip Enhancement and Rejuvenation</h2>
-					<div class="thumb-list-item">
-						<p>Our lip enhancement treatments are safe, subtle long-lasting and enhance your natural beauty. They are semi-permanent and biodegradable. We aim to achieve a truly natural look, a fresh and rejuvenating one that is subtle but gives you added confidence. We would always recommend a cautious approach; remember that you can build on the effect with subsequent top-up treatments. There are, like most treatments, a choice of products and we will discuss with you the most appropriate for you and for the look that you wish to achieve. The Dermal fillers we most commonly use for lip enhancements are <a href="http://www.restylane.co.uk/What-is-Restylane/products/fillers/lip-volume/" target="_blank">Restylane® Lip Volume</a>, <a href="http://www.restylane.co.uk/What-is-Restylane/products/skinboosters/lip-refresh/" target="_blank">Restylane® Lip refresh</a> and <a href="http://www.juvederm.co.uk/dermal-fillers/lip-fillers.aspx" target="_blank">Juvederm® ULTRA Smile</a> and more recently <a href="" target="_blank">Juvederm® Volbella</a>.</p>
-	      	</div>
-
 	      	<h2 id="ipl-hair-removal" class="treatment-product-section-label">IPL - Laser Hair Removal</h2>
 					<div class="thumb-list-item">
 						<p>Intense Pulsed Light (IPL) Treatment for the removal of unwanted hair.</p>
@@ -124,6 +125,11 @@
 						<p>Facial imperfections can simultaneously be treated safely and effectively with IPL Photo rejuvenation (Intense pulsed light) such as broken capillaries, skin discolouration, age spots, freckles, sun damage, mottled pigmentation and rosacea.</p>
 						<p>Small purple or red veins can also form anywhere on the leg, from the top of the thigh to the ankle. While these thread veins do not pose any major health problems, they may cause discomfort. Many people who have thread veins find them unsightly and embarrassing, and often attempt to conceal them with clothing or resort to cosmetic cover-ups, the results of which are often disappointing. Today a simple treatment called Microsclerotherapy is successfully being used to correct unwanted thread veins of the legs.</p>
 					</div>
+
+				 	<h2 id="#lip-enhancement" class="treatment-product-section-label">Lip Enhancement and Rejuvenation</h2>
+					<div class="thumb-list-item">
+						<p>Our lip enhancement treatments are safe, subtle long-lasting and enhance your natural beauty. They are semi-permanent and biodegradable. We aim to achieve a truly natural look, a fresh and rejuvenating one that is subtle but gives you added confidence. We would always recommend a cautious approach; remember that you can build on the effect with subsequent top-up treatments. There are, like most treatments, a choice of products and we will discuss with you the most appropriate for you and for the look that you wish to achieve. The Dermal fillers we most commonly use for lip enhancements are <a href="http://www.restylane.co.uk/What-is-Restylane/products/fillers/lip-volume/" target="_blank">Restylane® Lip Volume</a>, <a href="http://www.restylane.co.uk/What-is-Restylane/products/skinboosters/lip-refresh/" target="_blank">Restylane® Lip refresh</a> and <a href="http://www.juvederm.co.uk/dermal-fillers/lip-fillers.aspx" target="_blank">Juvederm® ULTRA Smile</a> and more recently <a href="" target="_blank">Juvederm® Volbella</a>.</p>
+	      	</div>
 
 	      	<h2 id="mesolift" class="treatment-product-section-label">Mesolift & Mesoglow</h2>
 					<div class="thumb-list-item">

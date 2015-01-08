@@ -17,3 +17,6 @@
 
 	</div>
 </div>
+
+<script id="setmore_script" type="text/javascript" src="https://my.setmore.com/js/iframe/setmore_iframe.js"></script>
+<a id="Setmore_button_iframe" style="float:none; position: fixed; right: -2px; top: 25%; display: block; z-index: 20000" href="https://my.setmore.com/shortBookingPage/b15eca5c-0651-4238-a7f7-1bebe17d1e83"><img border="none" src="/img/layout/setmore-booking-graphic.png" alt="Book an appointment with Harrogate Health & Beauty Cosmetic Clinic using SetMore" /></a>

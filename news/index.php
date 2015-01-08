@@ -25,8 +25,26 @@
 
       <div class="row single-col">
 
+<!--
 				<div class="thumb-list-item">
-					<h3>H&B Newsletter – December Edition<span>Written on Monday 1st December, 2014</span></h3>
+					<h3>H&B Newsletter – Edition #013<span>Written on Monday 12th January, 2015</span></h3>
+					<p>Open day – ?.</p>
+		      <a class="btn btn-lg btn-primary" target="_blank" href="http://eepurl.com/84FHf" title="Read the H&B December newsletter.">
+		      	View newsletter
+	      	</a>
+				</div>
+-->
+
+				<div class="thumb-list-item">
+					<h3>H&B Newsletter – Edition #012<span>Written on Monday 5th January, 2015</span></h3>
+					<p>Bring good luck to your skin in the new year.</p>
+		      <a class="btn btn-lg btn-primary" target="_blank" href="http://eepurl.com/baNCir" title="Read the H&B newsletter.">
+		      	View newsletter
+	      	</a>
+				</div>
+
+				<div class="thumb-list-item">
+					<h3>H&B Newsletter – Edition #011<span>Written on Monday 1st December, 2014</span></h3>
 					<p>Winter warmers – handpicked Christmas treatment offers.</p>
 		      <a class="btn btn-lg btn-primary" target="_blank" href="http://eepurl.com/84FHf" title="Read the H&B December newsletter.">
 		      	View newsletter
@@ -34,7 +52,7 @@
 				</div>
 
 				<div class="thumb-list-item">
-					<h3>H&B Newsletter – November Edition<span>Written on Wednesday 12th November, 2014</span></h3>
+					<h3>H&B Newsletter – Edition #010<span>Written on Wednesday 12th November, 2014</span></h3>
 					<p>Perfect skin care gifts for Christmas.</p>
 		      <a class="btn btn-lg btn-primary" target="_blank" href="http://eepurl.com/4-1tn" title="Read the H&B November newsletter.">
 		      	View newsletter
@@ -42,7 +60,7 @@
 				</div>
 
 				<div class="thumb-list-item">
-					<h3>H&B Newsletter – October Edition<span>Written on Friday 3rd October, 2014</span></h3>
+					<h3>H&B Newsletter – Edition #009<span>Written on Friday 3rd October, 2014</span></h3>
 					<p>Men's treatments – We recently launched a new dedicated page – treatments hand picked and tailored for men.</p>
 		      <a class="btn btn-lg btn-primary" target="_blank" href="http://eepurl.com/4A2u9" title="Read the H&B October newsletter.">
 		      	View newsletter
@@ -50,7 +68,7 @@
 				</div>
 
 				<div class="thumb-list-item">
-					<h3>H&B Newsletter – September Edition<span>Written on Tuesday 2nd September, 2014</span></h3>
+					<h3>H&B Newsletter – Edition #008<span>Written on Tuesday 2nd September, 2014</span></h3>
 					<p>Monthly recommendation – Jan Marini 5-Step Skin Care Management System.</p>
 		      <a class="btn btn-lg btn-primary" href="#myModal-9" role="button" data-toggle="modal">
 		      	View newsletter
@@ -70,7 +88,7 @@
 				</div>
 
 				<div class="thumb-list-item">
-					<h3>H&B Newsletter – August Edition<span>Written on Monday 11th July, 2014</span></h3>
+					<h3>H&B Newsletter – Edition #007<span>Written on Monday 11th July, 2014</span></h3>
 					<p>Summer nails special.</p>
 		      <a class="btn btn-lg btn-primary" href="#myModal-8" role="button" data-toggle="modal">
 		      	View newsletter
@@ -91,7 +109,7 @@
 				</div>
 
 				<div class="thumb-list-item">
-					<h3>H&B Newsletter – July Edition<span>Written on Tuesday 15th July, 2014</span></h3>
+					<h3>H&B Newsletter – Edition #006<span>Written on Tuesday 15th July, 2014</span></h3>
 					<p>Featuring Event news and Recommend a friend.</p>
 		      <a class="btn btn-lg btn-primary" href="#myModal-7" role="button" data-toggle="modal">
 		      	View newsletter
@@ -112,7 +130,7 @@
 				</div>
 
 				<div class="thumb-list-item">
-					<h3>H&B Newsletter – June Edition<span>Written on Sunday 1st June, 2014</span></h3>
+					<h3>H&B Newsletter – Edition #005<span>Written on Sunday 1st June, 2014</span></h3>
 					<p>Featuring News products, Product of the month and Recommend a friend.</p>
 		      <a class="btn btn-lg btn-primary" href="#myModal-6" role="button" data-toggle="modal">
 		      	View newsletter
@@ -133,7 +151,7 @@
 				</div>
 
 				<div class="thumb-list-item">
-					<h3>H&B Newsletter – May Edition<span>Written on Tuesday 6th May, 2014</span></h3>
+					<h3>H&B Newsletter – Edition #004<span>Written on Tuesday 6th May, 2014</span></h3>
 					<p>Includes Spring Bank Holiday offers, Product of the month and Recommend a friend.</p>
 		      <a class="btn btn-lg btn-primary" href="#myModal-5" role="button" data-toggle="modal">
 		      	View newsletter
@@ -154,7 +172,7 @@
 				</div>
 
 				<div class="thumb-list-item">
-					<h3>H&B Newsletter – April Edition<span>Written on Wednesday 2nd April, 2014</span></h3>
+					<h3>H&B Newsletter – Edition #003<span>Written on Wednesday 2nd April, 2014</span></h3>
 					<p>Includes Easter specials, Product of the month and Events.</p>
 		      <a class="btn btn-lg btn-primary" href="#myModal-4" role="button" data-toggle="modal">
 		      	View newsletter
@@ -175,7 +193,7 @@
 				</div>
 
 				<div class="thumb-list-item">
-					<h3>H&B Newsletter – March Edition<span>Written on Monday 3rd March, 2014</span></h3>
+					<h3>H&B Newsletter – Edition #002<span>Written on Monday 3rd March, 2014</span></h3>
 					<p>Get ready for Spring.</p>
 					<p>Check out our new products and Mothers Day offers.</p>
 		      <a class="btn btn-lg btn-primary" href="#myModal-3" role="button" data-toggle="modal">
@@ -197,7 +215,7 @@
 				</div>
 
 				<div class="thumb-list-item">
-					<h3>H&B Newsletter – February Edition<span>Written on Sunday 2nd February, 2014</span></h3>
+					<h3>H&B Newsletter – Edition #001<span>Written on Sunday 2nd February, 2014</span></h3>
 					<p>We hope you all had a lovely new year and wishing you all the best for 2014.</p>
 					<p>Why not take advantage of our exclusive February offers.</p>
 		      <a class="btn btn-lg btn-primary" href="#myModal-2" role="button" data-toggle="modal">

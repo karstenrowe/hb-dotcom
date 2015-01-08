@@ -3,7 +3,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="author" href="/humans.txt">
   <meta name="description" content="Harrogate Health & Beauty Cosmetic Clinic. A medical cosmetic clinic specialising in advanced aesthetics and beauty treatments. A leading facialist & cosmetic clinic focused on wrinkle reduction & skin revitalisation.">
-  <meta name="keywords" content="advanced aesthetics, beauty treatments, cosmetic prodcedures, cosmetic clinic, botox, dermal fillers, juvederm, hair removal, IPL, skin peels, meso injections, mesotherapy, mesolift, anti-ageing treatments, face lifts, sculptra, CACI, Environ, men's treatments, Harrogate, North Yorkshire, Yorkshire">
+  <meta name="keywords" content="advanced aesthetics, beauty treatments, cosmetic prodcedures, cosmetic clinic, botox, dermal fillers, juvederm, hair removal, IPL, skin peels, meso injections, mesotherapy, mesolift, anti-ageing treatments, face lifts, sculptra, CACI, Environ, 3D lipo, 3D lipomed, men's treatments, Harrogate, North Yorkshire, Yorkshire">
   <link rel="shortcut icon" href="/ico/favicon.png">
   <title>Harrogate Health & Beauty Cosmetic Clinic</title>
 

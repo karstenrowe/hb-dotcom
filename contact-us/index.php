@@ -48,6 +48,7 @@
 				</ul>
 				<h4>Gift vouchers</h4>
 				<p>Gift vouchers make ideal birthday and christmas presents and are available from our salon for any amount and for any products or services we offer.</p>
+
 			</div>
 
     </div> <!-- /container -->

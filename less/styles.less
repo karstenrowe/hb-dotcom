@@ -775,6 +775,28 @@ p {
 	margin: 6px 0;
 }
 
+// Facebook widget
+.fb_iframe_widget {
+	width: 100%;
+	overflow: hidden; // prevents facebook sidebar widget breaking its container
+}
+
+// Contact form
+#contact-area {
+	max-width: 460px;
+}
+
+// Setmore booking widget tab
+#Setmore_button_iframe {
+	opacity: 0.5;
+	&:hover { opacity: 1; }
+	img {
+		width: 30px;
+		height: 140px;
+	}
+}
+
+
 
 /* ============================ */
 /* = media queries: small screen = */
@@ -818,14 +840,6 @@ p {
   }
 }
 /* ============================ */
-.fb_iframe_widget {
-	width: 100%;
-	overflow: hidden; // prevents facebook sidebar widget breaking its container
-}
-// contact form
-#contact-area {
-	max-width: 460px;
-}
 
 
 

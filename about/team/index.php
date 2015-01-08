@@ -49,12 +49,12 @@
 
     </div> <!-- /container -->
 
+
+
 		<div class="testimonial">
 			<div class="container">
 
-				<blockquote>" Individually crafted treatments and innovative new products tailored to my personal requirements ... "
-					<cite>Caroline J Bourne</cite>
-				</blockquote>
+				<blockquote>I first visited Harrogate Health & Beauty in 1999 – I needed urgent, professional help with my poor quality skin ... <cite>Janet Leeds</cite></blockquote>
 
 				<!-- Button trigger modal -->
 				<a href="#" data-toggle="modal" data-target="#myModal">
@@ -67,18 +67,17 @@
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				        <h4 class="modal-title" id="myModalLabel">Caroline J Bourne testimonial</h4>
+				        <h4 class="modal-title" id="myModalLabel">Janet Leeds testimonial</h4>
 				      </div>
 				      <div class="modal-body">
-				      	<em>
-					        <p>Individually crafted treatments and innovative new products tailored to my personal requirements.</p>
-					        <p>I would recommend Harrogate Health & Beauty to anyone who is looking for a professional, friendly and safe prognosis if their problem, with a matching programme of treatments to achieve outstanding results.</p>
-				        </em>
+				        <p>When I first visited Harrogate Health & Beauty in 1999 (15 years ago?) – I needed urgent, professional help with my poor quality skin.</p>
+				        <p>I've never looked back. Bente is a total professional in her field – proficient, dedicated, discreet, tailoring each treatment to the individual.</p>
+				        <p>Constantly striving and learning so she can offer cutting edge and innovative treatments.</p>
+				        <p>The result – fabulous skin. I truly believe that my skin looks better today than all those years ago when I was lucky enough to meet Bente.</p>
+				        <p>I receive compliments on how well I look. Exactly the result I was looking for – naturally glowing, healthy skin with minimal make up.</p>
 				        <p>Related links:</p>
 				        <ul class="related-links">
-					        <li><a href="/treatments/beauty-treatments/#caci" title="Learn more about CACI beauty treatments." target="_blank">CACI treatments</a></li>
-					        <li><a href="/treatments/products/#Environ" title="Learn more about Environ skincare products." target="_blank">Environ products</a></li>
-					        <li><a href="/treatments/products/#SkinCeuticals" title="Learn more about Skin Ceuticals products" target="_blank">Skin Ceuticals products</a></li>
+					        <li><a href="/treatments/advanced/" title="Learn more about advanced cosmetic treatments.">Wrinkle reduction</a></li>
 					        <li><a href="/about/testimonials/" title="Read more client testimonials.">Read more client testimonials</a></li>
 				        </ul>
 				      </div>
