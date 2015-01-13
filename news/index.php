@@ -25,15 +25,13 @@
 
       <div class="row single-col">
 
-<!--
 				<div class="thumb-list-item">
 					<h3>H&B Newsletter – Edition #013<span>Written on Monday 12th January, 2015</span></h3>
-					<p>Open day – ?.</p>
-		      <a class="btn btn-lg btn-primary" target="_blank" href="http://eepurl.com/84FHf" title="Read the H&B December newsletter.">
+					<p>3D Lipo open day. We're thrilled to announce that we are going to be hosting an exclusive event at the clinic offering new body treatments and skin tightening.</p>
+		      <a class="btn btn-lg btn-primary" target="_blank" href="http://eepurl.com/baOQ4L" title="Read the H&B newsletter.">
 		      	View newsletter
 	      	</a>
 				</div>
--->
 
 				<div class="thumb-list-item">
 					<h3>H&B Newsletter – Edition #012<span>Written on Monday 5th January, 2015</span></h3>
