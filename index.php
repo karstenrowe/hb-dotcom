@@ -19,6 +19,11 @@
 	    <div class="container">
 
 	      <div class="jumbotron row welcome">
+
+					<div class="alert alert-warning alert-dismissible" role="alert">
+					  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					  <strong>3D-Lipo open day.</strong> We are looking forward to hosting the event and demonstrating our new treatments. <a href="http://eepurl.com/bcpGwv" target="_blank" alt="Find out more about 3D Lipo open day.">Reserve your place</a>.
+				  </div>
 	        <h2 class="pull-out">Welcome to Harrogate Health & Beauty
 		        <span>A medical cosmetic clinic specialising in advanced aesthetics, for ladies & gentlemen.</span>
 	        </h2>
